@@ -39,6 +39,16 @@ Atomic notes on component design, state management, API integration, database pa
 - [Immutability Patterns](./functional/immutability-patterns.md) - Avoiding data mutations
 - [Array Functional Methods](./functional/array-methods-functional.md) - map, filter, reduce patterns
 
+## AI/LLM Integration
+- [AI/LLM Overview](./ai/index.md) - Complete guide to AI chatbot patterns
+- [Tool Definition Pattern](./ai/ai-tool-definition-pattern.md) - Creating AI tools
+- [AI SDK Server Integration](./ai/ai-sdk-server-streaming.md) - Server-side streaming
+- [AI SDK Client Integration](./ai/ai-sdk-client-hooks.md) - Client-side useChat hooks
+- [Message Format Normalization](./ai/message-format-normalization.md) - Message conversion
+- [Tool Call Structure](./ai/tool-call-structure.md) - Tool invocation handling
+- [System Prompt Generation](./ai/system-prompt-generation.md) - Dynamic prompts
+- [Event Tracking & Analytics](./ai/event-tracking-analytics.md) - Observability patterns
+
 ## Error Handling & Other Patterns
 - [Error Boundaries](./error-boundaries.md) - Catching React errors (class component exception)
 - [Arrow Functions vs Declarations](./arrow-vs-declaration.md) - When to use each
