@@ -13,6 +13,17 @@ This knowledge base serves as:
 - **Cost-Efficient Reference**: Load only the specific notes needed for a task, not entire comprehensive documents
 - **Skill/Agent Knowledge**: Individual atomic notes can be loaded as context for specific coding tasks
 
+## Development Philosophy
+
+These standards are designed for **small teams** with specific preferences:
+
+- **JavaScript-First**: Plain JavaScript with JSDoc instead of TypeScript (see `principles/javascript-with-jsdoc.md`)
+- **Functional Programming**: Functional patterns over OOP for business logic (see `principles/functional-programming.md`)
+- **Minimal Complexity**: Fewer build steps, simpler tooling, reduced moving parts
+- **Modern React**: Hooks and functional components; classes only for Error Boundaries
+
+**Key Naming Convention**: Variables use `snake_case`, BUT React hook returns use `camelCase` (React ecosystem convention)
+
 ## Repository Structure
 
 ```
@@ -82,7 +93,9 @@ grep -r "async" --include="*.md"
 
 ### Naming a Variable
 1. Check `naming/index.md`
-2. Read `naming/variables-camelcase.md`
+2. Read `naming/variables-snake-case.md`
+   - Note: React hook returns use camelCase (exception)
+   - Regular variables use snake_case
 3. If boolean, read `naming/boolean-prefix.md`
 4. If constant, read `naming/constants-screaming-snake.md`
 

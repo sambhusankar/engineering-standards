@@ -10,6 +10,19 @@ This repository contains **36+ atomic notes** organized into focused topics:
 - **Architecture** (9 notes) - Component patterns, state management, services
 - **Git Workflow** (7 notes) - Branches, commits, PRs, background tasks
 
+### For Small Teams
+
+These are **simple, opinionated standards** designed for **small teams** with specific constraints and preferences:
+
+✅ **Minimized Complexity** - JavaScript with JSDoc instead of TypeScript
+✅ **Functional-First** - Functional programming over OOP for business logic
+✅ **Modern React** - Hooks, functional components, minimal classes
+✅ **Fewer Moving Parts** - Reduced build steps and tooling overhead
+
+**Philosophy documents:**
+- [JavaScript with JSDoc](./principles/javascript-with-jsdoc.md) - Why plain JavaScript
+- [Functional Programming](./principles/functional-programming.md) - When to use FP vs OOP
+
 ## Why Atomic Notes?
 
 Traditional comprehensive documentation is inefficient for LLM tools. This knowledge base uses **atomic notes** - each addressing one specific concept - for:
@@ -29,7 +42,7 @@ Traditional comprehensive documentation is inefficient for LLM tools. This knowl
 │   └── atomic-knowledge-base.md
 ├── naming/            # Naming conventions (11 notes)
 │   ├── index.md
-│   ├── variables-camelcase.md
+│   ├── variables-snake-case.md
 │   ├── components-pascalcase.md
 │   └── ... (8 more)
 ├── testing/           # Testing practices (9 notes)
@@ -69,10 +82,10 @@ Search and load atomically:
 ls naming/*.md
 
 # Search for specific concept
-grep -r "camelCase" --include="*.md"
+grep -r "snake_case" --include="*.md"
 
 # Load specific note
-cat naming/variables-camelcase.md
+cat naming/variables-snake-case.md
 ```
 
 **Best practice**: Start with topic index, identify relevant notes, load only what's needed.
