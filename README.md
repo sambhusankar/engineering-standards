@@ -1,93 +1,191 @@
-# Engineering Standards
+# Engineering Standards - Atomic Knowledge Base
 
-This repository contains the engineering standards, design patterns, and development practices for all projects across the organization. These standards ensure consistency, maintainability, and quality across our codebase.
+An atomic knowledge base of engineering standards designed for efficient LLM consumption. Each note focuses on a single concept, pattern, or practice.
 
-## Overview
+## What is This?
 
-This repository serves as the single source of truth for:
-- **Code Style & Naming Conventions**: How we name variables, organize files, and structure code
-- **Testing Practices**: How we write tests, achieve coverage, and ensure quality
-- **Architecture Patterns**: How we design systems, structure components, and manage data flow
-- **Development Workflows**: How we work with Git, handle background tasks, and deploy code
+This repository contains **36+ atomic notes** organized into focused topics:
+- **Naming** (11 notes) - Variables, functions, components, files, types
+- **Testing** (9 notes) - Test patterns, coverage, mocking, React testing
+- **Architecture** (9 notes) - Component patterns, state management, services
+- **Git Workflow** (7 notes) - Branches, commits, PRs, background tasks
 
-## Standards Documentation
+## Why Atomic Notes?
 
-### 📐 [Code Style Guide](standards/code-style.md)
-- Variable and function naming conventions
-- File naming and organization
-- Code formatting and structure
-- Import/export patterns
-- Comments and documentation
+Traditional comprehensive documentation is inefficient for LLM tools. This knowledge base uses **atomic notes** - each addressing one specific concept - for:
 
-### 🧪 [Testing Practices](standards/testing-practices.md)
-- Test file structure and naming
-- Unit, integration, and E2E testing patterns
-- Coverage requirements and strategies
-- Mocking and stubbing conventions
-- Test data management
+✅ **Cost Efficiency** - Load only relevant notes, not entire documents
+✅ **Clear Context** - Each note is self-contained and focused
+✅ **Easy Discovery** - Find exactly what you need via search or index
+✅ **Emergent Organization** - Knowledge graph emerges from inter-note links
 
-### 🏗️ [Architecture Patterns](standards/architecture-patterns.md)
-- Component and module structure
-- State management patterns
-- API integration patterns
-- Database access patterns
-- Error handling strategies
-- Performance optimization guidelines
+**Read more**: [principles/atomic-knowledge-base.md](./principles/atomic-knowledge-base.md)
 
-### 🔄 [Development Workflows](standards/development-workflows.md)
-- Git branching and commit strategies
-- Pull request guidelines
-- Code review checklist
-- Background task implementation (jobs, cron, queues)
-- Deployment procedures
-- Environment management
+## Repository Structure
 
-## Using These Standards
+```
+/
+├── principles/         # Knowledge base principles
+│   └── atomic-knowledge-base.md
+├── naming/            # Naming conventions (11 notes)
+│   ├── index.md
+│   ├── variables-camelcase.md
+│   ├── components-pascalcase.md
+│   └── ... (8 more)
+├── testing/           # Testing practices (9 notes)
+│   ├── index.md
+│   ├── aaa-pattern.md
+│   ├── coverage-requirements.md
+│   └── ... (6 more)
+├── architecture/      # Architecture patterns (9 notes)
+│   ├── index.md
+│   ├── container-presentational-pattern.md
+│   ├── custom-hooks.md
+│   └── ... (6 more)
+├── git-workflow/      # Git & development workflow (7 notes)
+│   ├── index.md
+│   ├── branch-naming.md
+│   ├── commit-format.md
+│   └── ... (4 more)
+├── examples/          # Complex code examples (future)
+└── templates/         # Project templates
+    └── CLAUDE.md.template
+```
 
-### For Developers
+## Quick Start
 
-1. Read the relevant standards before starting work on a new feature or project
-2. Reference these standards during code reviews
-3. Propose changes via pull requests when standards need updating
+### For Humans
 
-### For Claude Code
+Browse by topic:
+1. Start with a topic `index.md` file (e.g., `naming/index.md`)
+2. Click through to specific notes of interest
+3. Follow "Related Notes" links to discover connections
 
-Each project should reference these standards in its `CLAUDE.md` file. See [templates/CLAUDE.md.template](templates/CLAUDE.md.template) for an example.
+### For LLMs
 
-Claude Code will automatically fetch and apply these standards when working on your codebase.
+Search and load atomically:
+```bash
+# Find all naming notes
+ls naming/*.md
 
-### For New Projects
+# Search for specific concept
+grep -r "camelCase" --include="*.md"
 
-1. Copy `templates/CLAUDE.md.template` to your project root as `CLAUDE.md`
-2. Customize project-specific details
-3. Keep the references to these central standards
+# Load specific note
+cat naming/variables-camelcase.md
+```
+
+**Best practice**: Start with topic index, identify relevant notes, load only what's needed.
+
+## Common Use Cases
+
+### Naming a React Component
+1. Read `naming/components-pascalcase.md`
+2. Follow to `naming/files-components.md`
+3. If using hooks: `naming/hooks-use-prefix.md`
+
+### Writing Tests
+1. Start at `testing/index.md`
+2. Read `testing/aaa-pattern.md` for structure
+3. Read `testing/coverage-requirements.md` for targets
+4. Read `testing/testing-react-components.md` for React
+
+### Setting Up Git Workflow
+1. Start at `git-workflow/index.md`
+2. Read `git-workflow/branch-naming.md`
+3. Read `git-workflow/commit-format.md`
+4. Read `git-workflow/pull-request-guidelines.md`
+
+### Designing Component Architecture
+1. Start at `architecture/index.md`
+2. Read `architecture/container-presentational-pattern.md`
+3. Read `architecture/component-composition.md`
+4. Follow links to state management patterns
+
+## For LLM Agents & Skills
+
+This knowledge base is optimized for LLM consumption:
+
+- **Load selectively**: Only fetch notes relevant to current task
+- **Follow links**: Navigate through related concepts as needed
+- **Index first**: Check `index.md` files for overview
+- **Stay focused**: Each note addresses one concept
+
+See [CLAUDE.md](./CLAUDE.md) for detailed usage guidance.
+
+## For Other Projects
+
+**Do NOT** copy these notes into your project. Instead:
+
+1. Reference this repository in your project's `CLAUDE.md`
+2. Link to specific notes when documenting patterns
+3. Treat this as the source of truth for standards
+
+See [templates/CLAUDE.md.template](./templates/CLAUDE.md.template) for how to integrate these standards into your project.
 
 ## Contributing
 
-Standards should evolve based on:
-- Lessons learned from production issues
-- New technology adoption
-- Team feedback and pain points
-- Industry best practices
+### Adding a New Note
 
-To propose a change:
-1. Create a branch describing the change (e.g., `update-testing-coverage-requirements`)
-2. Update the relevant standard document(s)
-3. Provide rationale and examples in your PR description
-4. Get approval from at least 2 senior engineers
+1. Determine the correct topic directory
+2. Create focused note (20-50 lines typical):
+   - Clear title describing single concept
+   - Code example(s)
+   - Links to 2-5 related notes
+3. Update directory `index.md`
+4. Add cross-references from related notes
+
+### Updating Notes
+
+1. Preserve single-concept focus
+2. Update examples for clarity
+3. Maintain cross-references
+4. Update CHANGELOG.md for significant changes
+
+### When a Note Gets Too Large
+
+If a note exceeds ~60 lines:
+1. Identify sub-concepts
+2. Split into multiple atomic notes
+3. Update original note with links
+4. Update index
+
+## Atomic Note Structure
+
+Each note follows this pattern:
+
+```markdown
+# [Clear Descriptive Title]
+
+[One-paragraph summary]
+
+## [Pattern/Example/Usage Section]
+
+[Code example or explanation]
+
+## Related Notes
+- [Link to related concept 1](./related-note.md)
+- [Link to related concept 2](../other-dir/note.md)
+```
+
+**Key properties**:
+- Single idea per note
+- Concise (20-50 lines typical)
+- Practical code examples
+- 2-5 related note links
 
 ## Version History
 
-Track major changes to standards in [CHANGELOG.md](CHANGELOG.md).
+See [CHANGELOG.md](./CHANGELOG.md) for version history and major changes.
 
 ## Questions?
 
-If standards are unclear or don't cover your use case:
-1. Check the `examples/` directory for reference implementations
-2. Ask in the engineering Slack channel
-3. Propose a clarification or addition to the standards
+- **For LLM usage**: See [CLAUDE.md](./CLAUDE.md)
+- **For atomic principles**: See [principles/atomic-knowledge-base.md](./principles/atomic-knowledge-base.md)
+- **For specific standards**: Browse topic directories
 
 ---
 
+**Maintained for**: LLM-powered development tools, AI coding assistants, engineering teams
 **Last Updated**: 2025-11-18
-**Maintained By**: Engineering Team
+**Note Count**: 36+ atomic notes across 4 topics
