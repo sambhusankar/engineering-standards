@@ -95,5 +95,5 @@ console.log(Status.fromValue('active')); // 'ACTIVE'
 
 ## Related Notes
 - [Constants: SCREAMING_SNAKE_CASE](./constants-screaming-snake.md)
-- [JSDoc Type Patterns](./jsdoc-types.md)
-- [Variables: camelCase](./variables-camelcase.md)
+- [JSDoc Type Patterns](./jsdoc/jsdoc-types.md)
+- [Variables: snake_case](./variables-snake-case.md)

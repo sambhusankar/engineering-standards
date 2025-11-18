@@ -22,7 +22,7 @@ Each note has a clear, descriptive title that reflects its single idea. The titl
 
 **Examples**:
 - `testing/aaa-pattern.md` - Arrange-Act-Assert test structure
-- `architecture/container-presentational-pattern.md` - Separating logic from UI
+- `architecture/components/container-presentational-pattern.md` - Separating logic from UI
 - `git-workflow/branch-naming.md` - Branch naming conventions
 
 ### 3. Links Over Hierarchy

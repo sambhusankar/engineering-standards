@@ -18,5 +18,12 @@ Atomic notes on naming conventions for variables, functions, components, files, 
 - [Test Files: Match Source with .test](./files-tests.md) - Test file naming
 
 ## Types & Documentation
-- [Enum-Like Objects: PascalCase with SCREAMING_SNAKE_CASE Values](./enums-pattern.md) - Enum-like object naming
-- [JSDoc Type Patterns](./jsdoc-types.md) - Type documentation with JSDoc
+- [Enum-Like Objects](./enums-pattern.md) - Enum-like object naming (PascalCase with SCREAMING_SNAKE_CASE)
+- [JSDoc Type Patterns Overview](./jsdoc/jsdoc-types.md) - Overview and links to JSDoc documentation patterns
+
+### JSDoc Detailed Topics
+- [JSDoc: Basic Annotations](./jsdoc/jsdoc-basic-annotations.md) - @param, @returns, @throws
+- [JSDoc: Type Definitions](./jsdoc/jsdoc-typedef.md) - @typedef for custom types
+- [JSDoc: Generic Types](./jsdoc/jsdoc-generics.md) - @template for generics
+- [JSDoc: Callback Functions](./jsdoc/jsdoc-callbacks.md) - @callback for function types
+- [JSDoc: Importing Types](./jsdoc/jsdoc-imports.md) - Type imports and @ts-check

@@ -110,6 +110,6 @@ test('user can register and login', async ({ page }) => {
 - Cross-system integration
 
 ## Related Notes
-- [Testing Pyramid](./testing-pyramid.md)
 - [Coverage Requirements](./coverage-requirements.md)
 - [Mock External Dependencies](./mock-external-dependencies.md)
+- [Testing React Components](./testing-react-components.md)

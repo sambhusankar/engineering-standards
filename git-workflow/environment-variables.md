@@ -109,5 +109,5 @@ const dbCreds = await getSecret('production/database');
 ```
 
 ## Related Notes
-- [Deployment Process](./deployment-process.md)
-- [Configuration Management](./configuration-best-practices.md)
+- [Background Tasks: Cron Jobs](./background-tasks-cron.md)
+- [Background Tasks: Job Queues](./background-tasks-queues.md)

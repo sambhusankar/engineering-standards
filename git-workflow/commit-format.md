@@ -67,4 +67,3 @@ Fixes #123"
 ## Related Notes
 - [Branch Naming](./branch-naming.md)
 - [Pull Request Guidelines](./pull-request-guidelines.md)
-- [Commit Frequently](./commit-best-practices.md)

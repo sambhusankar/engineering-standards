@@ -59,5 +59,5 @@ module.exports = {
 
 ## Related Notes
 - [Unit vs Integration Tests](./unit-vs-integration.md)
-- [What to Test](./what-to-test.md)
-- [Testing Critical Paths](./testing-critical-paths.md)
+- [Testing React Components](./testing-react-components.md)
+- [AAA Pattern](./aaa-pattern.md)

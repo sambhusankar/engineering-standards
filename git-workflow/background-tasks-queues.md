@@ -106,5 +106,4 @@ emailQueue.on('completed', (job) => {
 
 ## Related Notes
 - [Background Tasks: Cron Jobs](./background-tasks-cron.md)
-- [Background Tasks: Webhooks](./background-tasks-webhooks.md)
-- [Error Handling](../architecture/error-handling-api.md)
+- [Environment Variables](./environment-variables.md)

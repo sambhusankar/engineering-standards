@@ -115,4 +115,4 @@ function UserProfile({ userId }) {
 ## Related Notes
 - [Context API Pattern](./context-api-pattern.md)
 - [State Colocation](./state-colocation.md)
-- [Custom Hooks Pattern](./custom-hooks.md)
+- [Custom Hooks Pattern](../components/custom-hooks.md)

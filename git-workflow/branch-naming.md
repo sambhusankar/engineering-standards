@@ -52,5 +52,4 @@ johns-work
 
 ## Related Notes
 - [Commit Message Format](./commit-format.md)
-- [Git Workflow Strategy](./git-flow-vs-github-flow.md)
-- [Creating Branches](./creating-branches.md)
+- [Pull Request Guidelines](./pull-request-guidelines.md)

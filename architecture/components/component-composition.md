@@ -122,5 +122,5 @@ function Tab({ label, isActive, onClick }) {
 
 ## Related Notes
 - [Container/Presentational Pattern](./container-presentational-pattern.md)
-- [Component Files Structure](./component-files.md)
-- [Props Destructuring](./props-destructuring.md)
+- [Custom Hooks Pattern](./custom-hooks.md)
+- [State Colocation](../state/state-colocation.md)

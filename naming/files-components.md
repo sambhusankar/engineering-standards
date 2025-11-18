@@ -57,5 +57,5 @@ src/components/Button/
 
 ## Related Notes
 - [Components: PascalCase](./components-pascalcase.md)
-- [Component Directory Structure](../architecture/component-files.md)
+- [Component Composition](../architecture/components/component-composition.md)
 - [Test File Naming](./files-tests.md)

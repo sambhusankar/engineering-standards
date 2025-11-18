@@ -69,5 +69,5 @@ Use conventional prefixes for clarity:
 
 ## Related Notes
 - [Pull Request Guidelines](./pull-request-guidelines.md)
-- [Responding to Reviews](./responding-to-reviews.md)
-- [Code Style Standards](../naming/variables-camelcase.md)
+- [Commit Message Format](./commit-format.md)
+- [Code Style Standards](../naming/variables-snake-case.md)

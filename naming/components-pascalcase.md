@@ -48,6 +48,6 @@ function Shopping_Cart_Item() { }
 ```
 
 ## Related Notes
-- [Component Files Structure](../architecture/component-files.md)
+- [Component Files](./files-components.md)
 - [Hooks: use Prefix](./hooks-use-prefix.md)
-- [Custom Hooks Pattern](../architecture/custom-hooks.md)
+- [Custom Hooks Pattern](../architecture/components/custom-hooks.md)

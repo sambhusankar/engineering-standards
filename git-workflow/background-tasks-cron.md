@@ -89,5 +89,4 @@ cron.schedule('0 * * * *', runScheduledTask);
 
 ## Related Notes
 - [Background Tasks: Job Queues](./background-tasks-queues.md)
-- [Background Tasks: Webhooks](./background-tasks-webhooks.md)
-- [Error Handling Best Practices](../architecture/error-handling-api.md)
+- [Environment Variables](./environment-variables.md)

@@ -115,5 +115,5 @@ async function fetchAndStoreData(dataStore) {
 
 ## Related Notes
 - [Functions: camelCase](../naming/functions-camelcase.md)
-- [Functional Programming](../principles/functional-programming.md)
-- [Component Patterns](./container-presentational-pattern.md)
+- [Functional Programming](../../principles/functional-programming.md)
+- [Pure Functions](./functional/pure-functions.md)

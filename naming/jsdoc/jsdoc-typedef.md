@@ -1,0 +1,71 @@
+# JSDoc: Type Definitions with @typedef
+
+Define reusable types using @typedef for complex object structures.
+
+## Basic Type Definition
+
+```javascript
+/**
+ * @typedef {Object} User
+ * @property {string} id - User ID
+ * @property {string} name - Full name
+ * @property {string} email - Email address
+ * @property {'admin'|'user'|'guest'} role - User role
+ */
+
+/**
+ * @param {User} user
+ * @returns {boolean}
+ */
+function isAdmin(user) {
+  return user.role === 'admin';
+}
+```
+
+## Complex Object Types
+
+```javascript
+/**
+ * @typedef {Object} ApiResponse
+ * @property {boolean} success - Whether request succeeded
+ * @property {*} data - Response data (any type)
+ * @property {string} [error] - Error message (optional)
+ * @property {number} statusCode - HTTP status code
+ */
+
+/**
+ * @param {string} url
+ * @returns {Promise<ApiResponse>}
+ */
+async function fetchData(url) {
+  const response = await fetch(url);
+  return {
+    success: response.ok,
+    data: await response.json(),
+    statusCode: response.status
+  };
+}
+```
+
+## Inline Object Types
+
+For simple cases, define types inline:
+
+```javascript
+/**
+ * @param {{
+ *   name: string,
+ *   email: string,
+ *   age?: number,
+ *   roles: string[]
+ * }} userData
+ */
+function validateUser(userData) {
+  // Validation logic
+}
+```
+
+## Related Notes
+- [JSDoc Basic Annotations](./basic-annotations.md)
+- [JSDoc Generic Types](./generics.md)
+- [JSDoc Importing Types](./imports.md)

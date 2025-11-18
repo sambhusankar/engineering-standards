@@ -98,5 +98,5 @@ export function AuthProvider({ children }) {
 
 ## Related Notes
 - [State Management: Local vs Global](./state-management-local-vs-global.md)
-- [Custom Hooks Pattern](./custom-hooks.md)
+- [Custom Hooks Pattern](../components/custom-hooks.md)
 - [State Colocation](./state-colocation.md)

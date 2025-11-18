@@ -72,4 +72,4 @@ Don't over-apply:
 ## Related Notes
 - [Custom Hooks Pattern](./custom-hooks.md)
 - [Component Composition](./component-composition.md)
-- [State Management](./state-management-local-vs-global.md)
+- [State Management](../state/state-management-local-vs-global.md)

@@ -108,4 +108,4 @@ describe('FileProcessor', () => {
 ## Related Notes
 - [Test Independence](./test-independence.md)
 - [AAA Pattern](./aaa-pattern.md)
-- [Integration Tests](./integration-tests.md)
+- [Unit vs Integration Tests](./unit-vs-integration.md)

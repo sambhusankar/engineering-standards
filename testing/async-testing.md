@@ -82,4 +82,4 @@ test('should complete long operation', async () => {
 ## Related Notes
 - [Testing React Components](./testing-react-components.md)
 - [Mock External Dependencies](./mock-external-dependencies.md)
-- [Error Testing](./error-testing.md)
+- [AAA Pattern](./aaa-pattern.md)

@@ -68,5 +68,5 @@ ShoppingCart
 
 ## Related Notes
 - [AAA Pattern](./aaa-pattern.md)
-- [Test Organization](./test-organization.md)
+- [Test Independence](./test-independence.md)
 - [Test File Naming](../naming/files-tests.md)
