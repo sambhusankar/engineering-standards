@@ -42,12 +42,12 @@ test('should calculate discount for multiple items', () => {
     { id: 1, price: 100 },
     { id: 2, price: 50 }
   ];
-  const discountRate = 0.1; // 10% discount
+  const discount_rate = 0.1; // 10% discount
 
   items.forEach(item => cart.addItem(item));
 
   // Act
-  const total = cart.calculateTotal(discountRate);
+  const total = cart.calculateTotal(discount_rate);
 
   // Assert
   expect(total).toBe(135); // (100 + 50) * 0.9

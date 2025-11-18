@@ -8,6 +8,7 @@ Custom hooks encapsulate state and side effects:
 
 ```javascript
 function useAuth() {
+  // Hook state: camelCase
   const [user, setUser] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
 
@@ -18,8 +19,9 @@ function useAuth() {
   }, []);
 
   const login = async (credentials) => {
-    const user = await authenticate(credentials);
-    setUser(user);
+    // Internal variables: snake_case
+    const authenticated_user = await authenticate(credentials);
+    setUser(authenticated_user);
   };
 
   const logout = () => {
@@ -27,6 +29,7 @@ function useAuth() {
     clearSession();
   };
 
+  // Return values: camelCase (will be destructured as hook returns)
   return { user, isLoading, login, logout };
 }
 ```
@@ -35,6 +38,7 @@ function useAuth() {
 
 ```javascript
 function App() {
+  // Hook returns: camelCase
   const { user, isLoading, login, logout } = useAuth();
 
   if (isLoading) return <LoadingSpinner />;
@@ -52,6 +56,7 @@ function App() {
 **Data fetching:**
 ```javascript
 function useFetchData(url) {
+  // Hook state: camelCase
   const [data, setData] = useState(null);
   const [error, setError] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
@@ -64,22 +69,26 @@ function useFetchData(url) {
       .finally(() => setIsLoading(false));
   }, [url]);
 
+  // Return values: camelCase
   return { data, error, isLoading };
 }
 ```
 
 **Local storage:**
 ```javascript
-function useLocalStorage(key, initialValue) {
+function useLocalStorage(key, initial_value) {
+  // Hook state: camelCase
   const [value, setValue] = useState(() => {
-    const stored = localStorage.getItem(key);
-    return stored ? JSON.parse(stored) : initialValue;
+    // Internal variables: snake_case
+    const stored_value = localStorage.getItem(key);
+    return stored_value ? JSON.parse(stored_value) : initial_value;
   });
 
   useEffect(() => {
     localStorage.setItem(key, JSON.stringify(value));
   }, [key, value]);
 
+  // Return values: camelCase (array for useState-like API)
   return [value, setValue];
 }
 ```

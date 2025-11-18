@@ -9,6 +9,7 @@ State placed too high in the component tree causes unnecessary re-renders:
 ```javascript
 // Bad - state too high
 function App() {
+  // Hook state: camelCase
   const [searchQuery, setSearchQuery] = useState('');
   const [theme, setTheme] = useState('light');
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -32,16 +33,19 @@ Move state to the component that actually needs it:
 ```javascript
 // Good - state colocated
 function SearchSection() {
+  // Hook state: camelCase
   const [searchQuery, setSearchQuery] = useState('');
   return <SearchBar query={searchQuery} onChange={setSearchQuery} />;
 }
 
 function Navigation() {
+  // Hook state: camelCase
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   return <SideMenu isOpen={isMenuOpen} onToggle={setIsMenuOpen} />;
 }
 
 function App() {
+  // Hook state: camelCase
   const [theme, setTheme] = useState('light');  // Only shared state here
 
   return (
@@ -68,6 +72,7 @@ Lift state only when components actually need to share it:
 ```javascript
 // Siblings need to share - lift to parent
 function ParentComponent() {
+  // Hook state: camelCase
   const [selectedId, setSelectedId] = useState(null);
 
   return (

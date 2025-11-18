@@ -97,11 +97,9 @@ function Tabs({ children, activeTab, onChange }) {
 }
 
 function Tab({ label, isActive, onClick }) {
+  const class_name = isActive ? 'tab active' : 'tab';
   return (
-    <button
-      className={isActive ? 'tab active' : 'tab'}
-      onClick={onClick}
-    >
+    <button className={class_name} onClick={onClick}>
       {label}
     </button>
   );

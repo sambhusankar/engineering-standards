@@ -135,28 +135,36 @@ function processUser(user) {
 }
 ```
 
-## Class Documentation
+## Module Exports with JSDoc
+
+Document exported functions in modules:
 
 ```javascript
 /**
- * User service for managing users
+ * @module user-service
  */
-class UserService {
-  /**
-   * @param {Object} db - Database connection
-   */
-  constructor(db) {
-    this.db = db;
-  }
 
-  /**
-   * Get user by ID
-   * @param {string} id - User ID
-   * @returns {Promise<User>}
-   */
-  async getUser(id) {
-    return this.db.users.findById(id);
-  }
+/**
+ * Get user by ID
+ * @param {string} id - User ID
+ * @returns {Promise<User>}
+ */
+export async function getUser(id) {
+  const response = await fetch(`/api/users/${id}`);
+  return response.json();
+}
+
+/**
+ * Create new user
+ * @param {Partial<User>} userData - User data
+ * @returns {Promise<User>}
+ */
+export async function createUser(userData) {
+  const response = await fetch('/api/users', {
+    method: 'POST',
+    body: JSON.stringify(userData)
+  });
+  return response.json();
 }
 ```
 
@@ -182,4 +190,4 @@ greet(123);
 ## Related Notes
 - [JavaScript with JSDoc Principle](../principles/javascript-with-jsdoc.md)
 - [Functions: camelCase](./functions-camelcase.md)
-- [Classes and Naming](./components-pascalcase.md)
+- [Module Organization](../architecture/module-organization.md)

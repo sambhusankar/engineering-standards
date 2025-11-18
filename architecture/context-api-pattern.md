@@ -15,8 +15,8 @@ export function AuthProvider({ children }) {
   const value = {
     user,
     login: async (credentials) => {
-      const user = await authenticate(credentials);
-      setUser(user);
+      const authenticated_user = await authenticate(credentials);
+      setUser(authenticated_user);
     },
     logout: () => setUser(null),
   };
@@ -84,8 +84,8 @@ export function AuthProvider({ children }) {
     () => ({
       user,
       login: async (credentials) => {
-        const user = await authenticate(credentials);
-        setUser(user);
+        const authenticated_user = await authenticate(credentials);
+        setUser(authenticated_user);
       },
       logout: () => setUser(null),
     }),

@@ -77,34 +77,43 @@ function Button({ children, onClick }) {
 }
 ```
 
-## `this` Context
+## `this` Context in Event Handlers
 
-Arrow functions don't have their own `this`:
+Arrow functions don't have their own `this`, useful for event handlers in objects:
 
 ```javascript
-class DataService {
-  constructor() {
-    this.data = [];
-  }
+const dataHandler = {
+  data: [],
 
-  // Arrow function preserves this
-  fetchData = async () => {
+  // Arrow function preserves `this` from enclosing scope
+  handleFetch: async function() {
     const result = await fetch('/api/data');
-    this.data = await result.json();  // `this` refers to instance
-  };
+    // In regular function, need arrow in callback to preserve `this`
+    result.json().then(data => {
+      this.data = data;  // Arrow function preserves `this`
+    });
+  },
 
-  // Regular function needs binding
-  fetchDataRegular() {
-    fetch('/api/data')
-      .then(result => result.json())
-      .then(data => {
-        this.data = data;  // Need arrow function in callback
-      });
+  // Or use arrow function for the whole method
+  handleUpdate: async () => {
+    const result = await fetch('/api/data');
+    this.data = await result.json();
   }
+};
+```
+
+**Note**: With functional programming, avoid relying on `this`. Use parameters instead:
+
+```javascript
+// Functional approach - no `this`
+async function fetchAndStoreData(dataStore) {
+  const result = await fetch('/api/data');
+  const data = await result.json();
+  return { ...dataStore, data };
 }
 ```
 
 ## Related Notes
 - [Functions: camelCase](../naming/functions-camelcase.md)
-- [Async/Await Pattern](./async-await-pattern.md)
+- [Functional Programming](../principles/functional-programming.md)
 - [Component Patterns](./container-presentational-pattern.md)

@@ -1,6 +1,6 @@
 # Service Layer Pattern
 
-Centralize API calls in service modules rather than scattering them throughout components.
+Centralize API calls in service modules using exported functions.
 
 ## Pattern
 
@@ -8,44 +8,70 @@ Create dedicated service modules for API interactions:
 
 ```javascript
 // services/userService.js
-import { apiClient } from './apiClient';
+import { apiClient } from './apiClient.js';
 
-export const userService = {
-  async getUser(userId) {
-    const response = await apiClient.get(`/users/${userId}`);
-    return response.data;
-  },
+/**
+ * @typedef {Object} User
+ * @property {string} id
+ * @property {string} name
+ * @property {string} email
+ */
 
-  async updateUser(userId, updates) {
-    const response = await apiClient.put(`/users/${userId}`, updates);
-    return response.data;
-  },
+/**
+ * Get user by ID
+ * @param {string} user_id
+ * @returns {Promise<User>}
+ */
+export async function getUser(user_id) {
+  const response = await apiClient.get(`/users/${user_id}`);
+  return response.data;
+}
 
-  async deleteUser(userId) {
-    await apiClient.delete(`/users/${userId}`);
-  },
+/**
+ * Update user
+ * @param {string} user_id
+ * @param {Partial<User>} updates
+ * @returns {Promise<User>}
+ */
+export async function updateUser(user_id, updates) {
+  const response = await apiClient.put(`/users/${user_id}`, updates);
+  return response.data;
+}
 
-  async listUsers(filters = {}) {
-    const response = await apiClient.get('/users', { params: filters });
-    return response.data;
-  },
-};
+/**
+ * Delete user
+ * @param {string} user_id
+ * @returns {Promise<void>}
+ */
+export async function deleteUser(user_id) {
+  await apiClient.delete(`/users/${user_id}`);
+}
+
+/**
+ * List users with optional filters
+ * @param {Object} [filters={}]
+ * @returns {Promise<User[]>}
+ */
+export async function listUsers(filters = {}) {
+  const response = await apiClient.get('/users', { params: filters });
+  return response.data;
+}
 ```
 
 ## Usage in Components
 
 ```javascript
-import { userService } from '@/services/userService';
+import { getUser, updateUser } from '@/services/userService.js';
 
 function UserProfile({ userId }) {
   const [user, setUser] = useState(null);
 
   useEffect(() => {
-    userService.getUser(userId).then(setUser);
+    getUser(userId).then(setUser);
   }, [userId]);
 
   const handleUpdate = async (updates) => {
-    await userService.updateUser(userId, updates);
+    const updated_user = await updateUser(userId, updates);
     setUser(prev => ({ ...prev, ...updates }));
   };
 
@@ -76,9 +102,9 @@ export const apiClient = axios.create({
 
 // Add auth token to requests
 apiClient.interceptors.request.use((config) => {
-  const token = getAuthToken();
-  if (token) {
-    config.headers.Authorization = `Bearer ${token}`;
+  const auth_token = getAuthToken();
+  if (auth_token) {
+    config.headers.Authorization = `Bearer ${auth_token}`;
   }
   return config;
 });
@@ -87,7 +113,8 @@ apiClient.interceptors.request.use((config) => {
 apiClient.interceptors.response.use(
   (response) => response,
   (error) => {
-    if (error.response?.status === 401) {
+    const status_code = error.response?.status;
+    if (status_code === 401) {
       redirectToLogin();
     }
     return Promise.reject(error);
@@ -96,6 +123,6 @@ apiClient.interceptors.response.use(
 ```
 
 ## Related Notes
-- [API Error Handling](./error-handling-api.md)
+- [Module Organization](./module-organization.md)
+- [Functional Programming](../principles/functional-programming.md)
 - [Custom Hooks for Data Fetching](./custom-hooks.md)
-- [Repository Pattern](./repository-pattern.md)

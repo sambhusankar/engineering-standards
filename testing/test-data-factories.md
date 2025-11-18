@@ -59,7 +59,7 @@ test('should handle out of stock products', () => {
 
 ```javascript
 export function createOrder(overrides = {}) {
-  const defaults = {
+  const default_values = {
     id: Math.random().toString(),
     user: createUser(),
     items: [createProduct(), createProduct()],
@@ -69,7 +69,7 @@ export function createOrder(overrides = {}) {
   };
 
   return {
-    ...defaults,
+    ...default_values,
     ...overrides,
   };
 }

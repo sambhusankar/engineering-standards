@@ -1,55 +1,53 @@
-# Utility Files: camelCase or kebab-case
+# Utility Files: camelCase
 
-Utility and helper files use `camelCase` or `kebab-case` depending on project convention.
+Utility and helper files that export functions or modules use `camelCase`.
 
-## Patterns
+## Pattern
 
-**camelCase** (preferred for single-concept files):
 ```
+userService.js
 fetchAPI.js
 dateFormatter.js
 stringUtils.js
 ```
 
-**kebab-case** (preferred for multi-word descriptive names):
-```
-fetch-api.js
-date-formatter.js
-string-utils.js
-```
+## Consistency
 
-## Choose One Per Project
-
-Pick one convention and apply consistently throughout the project. Don't mix:
+Apply camelCase consistently throughout the project:
 
 ```
-// Bad - mixing conventions
-src/utils/
-├── fetchAPI.js
-├── date-formatter.js
-├── stringUtils.js
-
 // Good - consistent camelCase
 src/utils/
 ├── fetchAPI.js
 ├── dateFormatter.js
 ├── stringUtils.js
 
-// Also good - consistent kebab-case
-src/utils/
-├── fetch-api.js
-├── date-formatter.js
-├── string-utils.js
+src/services/
+├── userService.js
+├── authService.js
+├── apiService.js
 ```
+
+## Why camelCase?
+
+- Matches function naming convention (functions are camelCase)
+- Simpler for modules that export functions
+- Fewer characters than kebab-case
+- Consistent with JavaScript naming patterns
 
 ## Named Exports Typical
 
 Utility files typically use named exports:
 
 ```javascript
-// stringUtils.js or string-utils.js
-export function capitalize(str) { }
-export function truncate(str, length) { }
+// stringUtils.js
+export function capitalize(str) {
+  return str.charAt(0).toUpperCase() + str.slice(1);
+}
+
+export function truncate(str, max_length) {
+  return str.length > max_length ? str.slice(0, max_length) + '...' : str;
+}
 ```
 
 ## Related Notes

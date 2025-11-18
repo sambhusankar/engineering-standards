@@ -12,6 +12,7 @@ Separate logic (container) from presentation (UI) for better maintainability and
 ```javascript
 // Container Component (logic)
 function UserProfileContainer({ userId }) {
+  // Hook returns: camelCase
   const { data, error, isLoading } = useFetchUser(userId);
   const [isEditing, setIsEditing] = useState(false);
 

@@ -6,19 +6,42 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+### Changed
+- **BREAKING**: Variable naming convention changed from camelCase to snake_case
+  - `naming/variables-camelcase.md` renamed to `naming/variables-snake-case.md`
+  - **Exception**: React hook returns use camelCase (e.g., `const [isEditing, setIsEditing] = useState()`)
+  - **Exception**: All variables returned from React hooks use camelCase (e.g., `const { data, error, isLoading } = useQuery()`)
+  - Regular variables (derived values, event handler variables, service layer) use snake_case
+  - Updated all code examples across architecture/ and testing/ directories
+  - Functions remain camelCase, components remain PascalCase
+  - React props remain camelCase (React convention)
+  - Constants remain SCREAMING_SNAKE_CASE
+  - Files exporting modules: camelCase.js (no longer allowing kebab-case)
+  - Files exporting components: PascalCase.jsx (unchanged)
+
 ### Added
 - **JavaScript-First Philosophy**:
   - `principles/javascript-with-jsdoc.md` - New principle documenting JavaScript with JSDoc approach
   - `naming/jsdoc-types.md` - JSDoc type patterns and documentation guide
   - Small team philosophy: minimize complexity, fewer build steps, simpler tooling
+- **Functional Programming Philosophy**:
+  - `principles/functional-programming.md` - Comprehensive guide on functional vs OOP approach
+  - `architecture/module-organization.md` - Organizing code in functional modules
+  - Focus on pure functions, immutability, composition over classes
+  - Classes only for React Error Boundaries and very specific objects (Date, etc.)
 
 ### Changed
 - **BREAKING**: Restructured repository from comprehensive documents to atomic knowledge base
-  - Replaced long-form standards documents with 36+ focused atomic notes
-  - Organized into topic directories: naming/, testing/, architecture/, git-workflow/
+  - Replaced long-form standards documents with 38+ focused atomic notes
+  - Organized into topic directories: naming/, testing/, architecture/, git-workflow/, principles/
   - Each note addresses single concept (20-50 lines typical)
   - Added index.md files for topic navigation
   - Optimized for LLM consumption and cost efficiency
+- **Refactored to Functional Programming**:
+  - Updated `architecture/service-layer-pattern.md` - Now uses exported functions instead of objects
+  - Updated `naming/jsdoc-types.md` - Replaced class examples with module patterns
+  - Updated `architecture/error-boundaries.md` - Noted as exception requiring classes
+  - Updated `architecture/arrow-vs-declaration.md` - Removed class example, added functional guidance
 
 ### Added
 - **Atomic Knowledge Base Structure**:

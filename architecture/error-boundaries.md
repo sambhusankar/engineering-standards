@@ -2,6 +2,8 @@
 
 Catch React errors gracefully using error boundary components.
 
+**Note**: Error boundaries are the **only** valid use of classes in React. They cannot be implemented with functional components.
+
 ## Pattern
 
 ```javascript
@@ -118,7 +120,12 @@ function App() {
 }
 ```
 
+## Why Classes Here?
+
+React error boundaries **require** class components because they use lifecycle methods (`componentDidCatch`, `getDerivedStateFromError`) that don't have functional equivalents.
+
+This is an exception to the functional programming principle - use it only for error boundaries.
+
 ## Related Notes
-- [Error Handling: API](./error-handling-api.md)
-- [Custom Error Classes](./custom-error-classes.md)
+- [Functional Programming Principle](../principles/functional-programming.md)
 - [Testing Error Cases](../testing/error-testing.md)

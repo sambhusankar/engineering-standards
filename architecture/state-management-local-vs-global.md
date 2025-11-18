@@ -21,6 +21,7 @@ Choose the right level of state management based on data sharing needs.
 ```javascript
 // Local state - only this component needs it
 function SearchBar() {
+  // Hook state: camelCase
   const [searchQuery, setSearchQuery] = useState('');
 
   return (
@@ -33,6 +34,7 @@ function SearchBar() {
 
 // Local state - toggle
 function Accordion() {
+  // Hook state: camelCase
   const [isOpen, setIsOpen] = useState(false);
 
   return (
