@@ -44,6 +44,18 @@ This approach provides:
 ### Data & Mocking
 - [Storybook Mock Data](./storybook-mock-data.md) - Centralized mocks and action proxies
 
+### Testing & Automation
+- [testing/](./testing/) - Automated testing with test-runner
+  - [Testing Overview](./testing/index.md) - Test runner architecture and workflow
+  - [Test Runner Config](./testing/test-runner-config.md) - Core configuration
+  - [Test Runner Hooks](./testing/test-runner-hooks.md) - Pre/post visit hooks
+  - [Running Tests Development](./testing/running-tests-development.md) - Watch mode, quick validation
+  - [Running Tests CI](./testing/running-tests-ci.md) - CI/CD commands
+  - [Testing Pattern Matching](./testing/testing-pattern-matching.md) - Testing specific components
+  - [Coverage Script](./testing/coverage-script.md) - How coverage tracking works
+  - [Coverage Requirements](./testing/coverage-requirements.md) - 100% coverage goal
+  - [CI GitHub Actions](./testing/ci-cd-github-actions.md) - GitHub Actions setup
+
 ## Quick Reference
 
 ### Story File Checklist
@@ -125,3 +137,15 @@ const sample_transactions = [ /* ... */ ];
 
 ### "What assertions can I use?"
 → [Assertions](./play-functions/play-functions-assertions.md)
+
+### "How do I run tests?"
+→ [Running Tests Development](./testing/running-tests-development.md)
+
+### "How do I test one component?"
+→ [Testing Pattern Matching](./testing/testing-pattern-matching.md)
+
+### "How do I check coverage?"
+→ [Coverage Reports](./testing/coverage-reports.md)
+
+### "How do I add tests to CI?"
+→ [CI GitHub Actions](./testing/ci-cd-github-actions.md)
