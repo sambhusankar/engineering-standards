@@ -54,6 +54,6 @@ e2e/
 ```
 
 ## Related Notes
-- [Test Naming](../testing/test-naming.md)
-- [Files: Components](./files-components.md)
-- [Unit vs Integration Tests](../testing/unit-vs-integration.md)
+- [Test Naming](/testing/test-naming.md)
+- [Files: Components](/naming/files-components.md)
+- [Unit vs Integration Tests](/testing/unit-vs-integration.md)

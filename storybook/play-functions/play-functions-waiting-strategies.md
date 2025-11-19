@@ -184,6 +184,6 @@ await waitFor(async () => {
 ```
 
 ## Related Notes
-- [Auto-Open Pattern](./play-functions-auto-open-pattern.md) - Using waits with auto-open
-- [Portaled Components](./play-functions-portaled-components.md) - Waiting for portals
-- [Play Functions](./play-functions.md) - Overview
+- [Auto-Open Pattern](/storybook/play-functions/play-functions-auto-open-pattern.md) - Using waits with auto-open
+- [Portaled Components](/storybook/play-functions/play-functions-portaled-components.md) - Waiting for portals
+- [Play Functions](/storybook/play-functions/play-functions.md) - Overview

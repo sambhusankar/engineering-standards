@@ -174,5 +174,5 @@ Don't use for:
 - Extensive edge case coverage
 
 ## Related Notes
-- [Playwright Auth Pattern](./playwright-auth-pattern.md)
-- [Playwright Helpers](./playwright-helpers.md)
+- [Playwright Auth Pattern](/testing/playwright-auth-pattern.md)
+- [Playwright Helpers](/testing/playwright-helpers.md)

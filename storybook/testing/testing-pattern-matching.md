@@ -232,6 +232,6 @@ Opens visible browser for Form component tests.
 
 ## Related Notes
 
-- [Testing Development Workflow](./testing-development-workflow.md) - Daily usage patterns
-- [Testing Debugging Individual](./testing-debugging-individual.md) - Debug specific tests
-- [Running Tests](./running-tests-development.md) - Watch mode and quick validation
+- [Testing Development Workflow](/storybook/testing/testing-development-workflow.md) - Daily usage patterns
+- [Testing Debugging Individual](/storybook/testing/testing-debugging-individual.md) - Debug specific tests
+- [Running Tests](/storybook/testing/running-tests-development.md) - Watch mode and quick validation

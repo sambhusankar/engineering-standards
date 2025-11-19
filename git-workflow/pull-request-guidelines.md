@@ -73,6 +73,6 @@ Related to #456
 - `ready-to-merge` - Approved
 
 ## Related Notes
-- [Code Review Checklist](./code-review-checklist.md)
-- [Commit Message Format](./commit-format.md)
-- [Branch Naming](./branch-naming.md)
+- [Code Review Checklist](/git-workflow/code-review-checklist.md)
+- [Commit Message Format](/git-workflow/commit-format.md)
+- [Branch Naming](/git-workflow/branch-naming.md)

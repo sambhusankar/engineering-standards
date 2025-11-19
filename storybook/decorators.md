@@ -272,6 +272,6 @@ const meta = {
 - Decorator adds back controlled padding and height
 
 ## Related Notes
-- [Meta Structure](./meta-structure.md) - Story file configuration
-- [ArgTypes Standards](./argtypes-standards.md) - Props documentation
-- [Storybook Mock Data](./storybook-mock-data.md) - Mock data patterns
+- [Meta Structure](/storybook/meta-structure.md) - Story file configuration
+- [ArgTypes Standards](/storybook/argtypes-standards.md) - Props documentation
+- [Storybook Mock Data](/storybook/storybook-mock-data.md) - Mock data patterns

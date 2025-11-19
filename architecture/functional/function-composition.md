@@ -130,6 +130,6 @@ console.log(add5and10(3)); // 18
 - **Flexibility** - Easy to add/remove steps in pipeline
 
 ## Related Notes
-- [Pure Functions](./pure-functions.md)
-- [Array Functional Methods](./array-methods-functional.md)
-- [Functional Programming](../../principles/functional-programming.md)
+- [Pure Functions](/architecture/functional/pure-functions.md)
+- [Array Functional Methods](/architecture/functional/array-methods-functional.md)
+- [Functional Programming](/principles/functional-programming.md)

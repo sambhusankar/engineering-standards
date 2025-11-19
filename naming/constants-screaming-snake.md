@@ -50,5 +50,5 @@ const calculatedTotal = items.reduce((sum, item) => sum + item.price, 0);
 ```
 
 ## Related Notes
-- [Variables: snake_case](./variables-snake-case.md)
-- [Enums Pattern](./enums-pattern.md)
+- [Variables: snake_case](/naming/variables-snake-case.md)
+- [Enums Pattern](/naming/enums-pattern.md)

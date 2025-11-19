@@ -121,6 +121,6 @@ function Tab({ label, isActive, onClick }) {
 - **Readability**: Self-documenting component hierarchy
 
 ## Related Notes
-- [Container/Presentational Pattern](./container-presentational-pattern.md)
-- [Custom Hooks Pattern](./custom-hooks.md)
-- [State Colocation](../state/state-colocation.md)
+- [Container/Presentational Pattern](/architecture/components/container-presentational-pattern.md)
+- [Custom Hooks Pattern](/architecture/components/custom-hooks.md)
+- [State Colocation](/architecture/state/state-colocation.md)

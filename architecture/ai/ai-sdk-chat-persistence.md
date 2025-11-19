@@ -181,5 +181,5 @@ function cleanupOldChats(maxAgeDays = 30) {
 ```
 
 ## Related Notes
-- [AI SDK Client Hooks](./ai-sdk-client-hooks.md) - useChat configuration
-- [Message Format Normalization](./message-format-normalization.md) - Message structure
+- [AI SDK Client Hooks](/architecture/ai/ai-sdk-client-hooks.md) - useChat configuration
+- [Message Format Normalization](/architecture/ai/message-format-normalization.md) - Message structure

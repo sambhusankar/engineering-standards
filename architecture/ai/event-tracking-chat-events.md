@@ -183,6 +183,6 @@ const sensitiveData = {
 ```
 
 ## Related Notes
-- [Event Tracking Analytics](./event-tracking-analytics.md) - Dual-destination tracking pattern
-- [AI SDK Server Integration](./ai-sdk-server-streaming.md) - Where tracking is called
-- [Tool Call Structure](./tool-call-structure.md) - Understanding tool execution
+- [Event Tracking Analytics](/architecture/ai/event-tracking-analytics.md) - Dual-destination tracking pattern
+- [AI SDK Server Integration](/architecture/ai/ai-sdk-server-streaming.md) - Where tracking is called
+- [Tool Call Structure](/architecture/ai/tool-call-structure.md) - Understanding tool execution

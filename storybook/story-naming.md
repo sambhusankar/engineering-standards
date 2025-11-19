@@ -176,7 +176,7 @@ export const when_no_data_exists = { ... }
 ```
 
 ## Related Notes
-- [Storybook User Journey Pattern](./storybook-user-journey-pattern.md) - Overall philosophy
-- [File Header Pattern](./documentation/file-header-pattern.md) - JSDoc file headers
-- [Meta Structure](./meta-structure.md) - Story file configuration
-- [Documentation Patterns](./documentation/documentation.md) - Multi-layer docs strategy
+- [Storybook User Journey Pattern](/storybook/storybook-user-journey-pattern.md) - Overall philosophy
+- [File Header Pattern](/storybook/documentation/file-header-pattern.md) - JSDoc file headers
+- [Meta Structure](/storybook/meta-structure.md) - Story file configuration
+- [Documentation Patterns](/storybook/documentation/documentation.md) - Multi-layer docs strategy

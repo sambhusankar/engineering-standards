@@ -10,36 +10,36 @@ For small teams using plain JavaScript, JSDoc provides:
 - Optional type checking in editors
 - No compilation overhead
 
-See [JavaScript with JSDoc Principle](../../principles/javascript-with-jsdoc.md) for philosophy.
+See [JavaScript with JSDoc Principle](/principles/javascript-with-jsdoc.md) for philosophy.
 
 ## JSDoc Topics
 
-### [Basic Annotations](./basic-annotations.md)
+### [Basic Annotations](/naming/jsdoc/basic-annotations.md)
 Document function parameters, returns, and exceptions:
 - @param for parameters
 - @returns for return values
 - @throws for exceptions
 - Optional parameters and union types
 
-### [Type Definitions](./typedef.md)
+### [Type Definitions](/naming/jsdoc/typedef.md)
 Define reusable complex types:
 - @typedef for custom types
 - Object property documentation
 - Inline object types
 
-### [Generic Types](./generics.md)
+### [Generic Types](/naming/jsdoc/generics.md)
 Work with generic type parameters:
 - @template for generics
 - Generic functions and types
 - Type-safe collections
 
-### [Callback Functions](./callbacks.md)
+### [Callback Functions](/naming/jsdoc/callbacks.md)
 Document function type parameters:
 - @callback for function types
 - Higher-order functions
 - Event handlers
 
-### [Importing Types](./imports.md)
+### [Importing Types](/naming/jsdoc/imports.md)
 Reuse types from other files:
 - Type imports with @typedef
 - Importing from node modules
@@ -65,6 +65,6 @@ async function getUser(userId) {
 ```
 
 ## Related Notes
-- [JavaScript with JSDoc Principle](../../principles/javascript-with-jsdoc.md)
-- [Functions: camelCase](./functions-camelcase.md)
-- [Module Organization](../../architecture/modules/module-exports-pattern.md)
+- [JavaScript with JSDoc Principle](/principles/javascript-with-jsdoc.md)
+- [Functions: camelCase](/naming/jsdoc/functions-camelcase.md)
+- [Module Organization](/architecture/modules/module-exports-pattern.md)

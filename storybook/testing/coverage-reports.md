@@ -204,7 +204,7 @@ npm run storybook:coverage
 
 ## Related Notes
 
-- [Coverage Script](./coverage-script.md) - How reports are generated
-- [Coverage Requirements](./coverage-requirements.md) - What counts as covered
-- [Coverage Improving](./coverage-improving.md) - Strategies to improve
-- [CI Artifacts](./ci-cd-artifacts.md) - Uploading reports in CI
+- [Coverage Script](/storybook/testing/coverage-script.md) - How reports are generated
+- [Coverage Requirements](/storybook/testing/coverage-requirements.md) - What counts as covered
+- [Coverage Improving](/storybook/testing/coverage-improving.md) - Strategies to improve
+- [CI Artifacts](/storybook/testing/ci-cd-artifacts.md) - Uploading reports in CI

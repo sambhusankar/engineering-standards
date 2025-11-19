@@ -31,14 +31,21 @@ Same note discoverable via both folder (topic) and links (relationships).
 
 ## Link Pattern
 
-Use relative paths from current file:
+Use repo-root relative paths:
 
 ```markdown
 ## Related Notes
-- [Coverage Requirements](./coverage-requirements.md)
-- [Mock Dependencies](./mock-external-dependencies.md)
-- [Custom Hooks](../architecture/custom-hooks.md)
+- [Coverage Requirements](/testing/coverage-requirements.md)
+- [Mock Dependencies](/testing/mock-external-dependencies.md)
+- [Custom Hooks](/architecture/components/custom-hooks.md)
 ```
+
+**Format**: `/directory/file.md` (starts with `/` from repo root)
+
+**Benefits**:
+- Links never break when moving files between directories
+- Works everywhere: GitHub web preview, local editors, IDEs, LLM consumption
+- Clear absolute reference (no ambiguity about which file)
 
 ## How Many Links
 
@@ -56,8 +63,8 @@ Put related links at **end** of note:
 [Content here]
 
 ## Related Notes
-- [Link 1](./link1.md)
-- [Link 2](../other-dir/link2.md)
+- [Link 1](/directory/link1.md)
+- [Link 2](/other-dir/link2.md)
 ```
 
 ## Benefits
@@ -67,6 +74,6 @@ Put related links at **end** of note:
 **Emergent knowledge graph**: Network of concepts emerges from cross-references
 
 ## Related Notes
-- [Emergent Structure](./emergent-structure.md)
-- [Discovery Patterns](./discovery-patterns.md)
-- [Single Idea Per Note](./single-idea-per-note.md)
+- [Emergent Structure](/principles/documentation/emergent-structure.md)
+- [Discovery Patterns](/principles/documentation/discovery-patterns.md)
+- [Single Idea Per Note](/principles/documentation/single-idea-per-note.md)

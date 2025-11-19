@@ -118,7 +118,7 @@ async function submitOrder(items, tax_rate, shipping) {
 ```
 
 ## Related Notes
-- [Function Composition](./function-composition.md)
-- [Immutability Patterns](./immutability-patterns.md)
-- [Functional Programming](../../principles/functional-programming.md)
-- [Testing Pure Functions](../../testing/testing-pure-functions.md)
+- [Function Composition](/architecture/functional/function-composition.md)
+- [Immutability Patterns](/architecture/functional/immutability-patterns.md)
+- [Functional Programming](/principles/functional-programming.md)
+- [Testing Pure Functions](/testing/testing-pure-functions.md)

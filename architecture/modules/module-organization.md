@@ -10,25 +10,25 @@ For small teams, functional modules provide:
 - **Tree-shaking** - Import only what you need
 - **Clear dependencies** - Parameters show what's needed
 
-See [Functional Programming Principle](../../principles/functional-programming.md) for the underlying philosophy.
+See [Functional Programming Principle](/principles/functional-programming.md) for the underlying philosophy.
 
 ## Module Organization Topics
 
-### [Module Exports Pattern](./module-exports-pattern.md)
+### [Module Exports Pattern](/architecture/modules/module-exports-pattern.md)
 How to structure and export functions from modules:
 - Named exports vs default exports
 - Named imports vs namespace imports
 - Private helper functions
 - Module structure best practices
 
-### [Module Shared State](./module-shared-state.md)
+### [Module Shared State](/architecture/modules/module-shared-state.md)
 When modules need shared configuration:
 - Module-level variables with closure pattern
 - Configure function pattern
 - When to use vs when to avoid
 - Alternative: dependency injection
 
-### [Utility Modules](./utility-modules.md)
+### [Utility Modules](/architecture/modules/utility-modules.md)
 Organizing utility functions:
 - Grouping related utilities
 - File organization patterns
@@ -100,7 +100,7 @@ export async function getUser(api_client, user_id) {
 **Exception**: React Error Boundaries are the only place classes are required in React.
 
 ## Related Notes
-- [Functional Programming Principle](../../principles/functional-programming.md)
-- [Service Layer Pattern](./service-layer-pattern.md)
-- [Functions: camelCase](../../naming/functions-camelcase.md)
-- [Error Boundaries](../error-boundaries.md)
+- [Functional Programming Principle](/principles/functional-programming.md)
+- [Service Layer Pattern](/architecture/modules/service-layer-pattern.md)
+- [Functions: camelCase](/naming/functions-camelcase.md)
+- [Error Boundaries](/architecture/error-boundaries.md)

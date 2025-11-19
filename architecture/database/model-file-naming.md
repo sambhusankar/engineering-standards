@@ -45,5 +45,5 @@ module.exports = function(sequelize) {
 - **No ambiguity**: Clear distinction from services, controllers, etc.
 
 ## Related Notes
-- [Model Definition Pattern](./model-definition-pattern.md) - How to structure model files
-- [Table Naming](./table-naming.md) - How table names differ from model names
+- [Model Definition Pattern](/architecture/database/model-definition-pattern.md) - How to structure model files
+- [Table Naming](/architecture/database/table-naming.md) - How table names differ from model names

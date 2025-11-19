@@ -143,9 +143,9 @@ export const WhenParserFails = { ... }
 ```
 
 ## Related Notes
-- [Story Naming](./story-naming.md) - User journey naming conventions
-- [Meta Structure](./meta-structure.md) - Story file configuration
-- [Play Functions](./play-functions/play-functions.md) - Automated interactions overview
-- [Documentation Patterns](./documentation/documentation.md) - Multi-layer docs strategy
-- [Storybook Interactions](./storybook-interactions.md) - Detailed interaction patterns
-- [Storybook Mock Data](./storybook-mock-data.md) - Mock data patterns
+- [Story Naming](/storybook/story-naming.md) - User journey naming conventions
+- [Meta Structure](/storybook/meta-structure.md) - Story file configuration
+- [Play Functions](/storybook/play-functions/play-functions.md) - Automated interactions overview
+- [Documentation Patterns](/storybook/documentation/documentation.md) - Multi-layer docs strategy
+- [Storybook Interactions](/storybook/storybook-interactions.md) - Detailed interaction patterns
+- [Storybook Mock Data](/storybook/storybook-mock-data.md) - Mock data patterns

@@ -100,6 +100,6 @@ function useLocalStorage(key, initial_value) {
 - **Organization**: Keep components focused on rendering
 
 ## Related Notes
-- [Hooks Naming: use Prefix](../../naming/hooks-use-prefix.md)
-- [Container/Presentational Pattern](./container-presentational-pattern.md)
-- [State Colocation](../state/state-colocation.md)
+- [Hooks Naming: use Prefix](/naming/hooks-use-prefix.md)
+- [Container/Presentational Pattern](/architecture/components/container-presentational-pattern.md)
+- [State Colocation](/architecture/state/state-colocation.md)

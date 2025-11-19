@@ -126,5 +126,5 @@ function ErrorMessage({ error, onRetry, onReset }) {
 ```
 
 ## Related Notes
-- [AI SDK Client Hooks](./ai-sdk-client-hooks.md) - Core useChat hook setup
-- [AI SDK Server Integration](./ai-sdk-server-streaming.md) - Server-side error handling
+- [AI SDK Client Hooks](/architecture/ai/ai-sdk-client-hooks.md) - Core useChat hook setup
+- [AI SDK Server Integration](/architecture/ai/ai-sdk-server-streaming.md) - Server-side error handling

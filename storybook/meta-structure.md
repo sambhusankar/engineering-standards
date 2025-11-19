@@ -22,7 +22,7 @@ const meta = {
 export default meta;
 ```
 
-**Note**: We do NOT use Storybook's autodocs feature. For component-level documentation, create `.mdx` files (see [MDX Component Docs](./documentation/mdx-component-docs.md)).
+**Note**: We do NOT use Storybook's autodocs feature. For component-level documentation, create `.mdx` files (see [MDX Component Docs](/storybook/documentation/mdx-component-docs.md)).
 
 ## Title Convention
 
@@ -90,13 +90,13 @@ parameters: {
 }
 ```
 
-See [Custom Description Banner](./documentation/custom-description-banner.md) for details.
+See [Custom Description Banner](/storybook/documentation/custom-description-banner.md) for details.
 
 ### Component Documentation
 
 For comprehensive component documentation, create `.mdx` files instead of using autodocs:
 
-See [MDX Component Docs](./documentation/mdx-component-docs.md) for details.
+See [MDX Component Docs](/storybook/documentation/mdx-component-docs.md) for details.
 
 ## File Structure Order
 
@@ -169,9 +169,9 @@ parameters: {
 ```
 
 ## Related Notes
-- [Story Naming](./story-naming.md) - User journey naming conventions
-- [ArgTypes Standards](./argtypes-standards.md) - Props documentation
-- [Decorators](./decorators.md) - Layout and context providers
-- [Documentation Patterns](./documentation/documentation.md) - Multi-layer docs strategy
-- [Custom Description Banner](./documentation/custom-description-banner.md) - Story descriptions
-- [File Header Pattern](./documentation/file-header-pattern.md) - JSDoc file headers
+- [Story Naming](/storybook/story-naming.md) - User journey naming conventions
+- [ArgTypes Standards](/storybook/argtypes-standards.md) - Props documentation
+- [Decorators](/storybook/decorators.md) - Layout and context providers
+- [Documentation Patterns](/storybook/documentation/documentation.md) - Multi-layer docs strategy
+- [Custom Description Banner](/storybook/documentation/custom-description-banner.md) - Story descriptions
+- [File Header Pattern](/storybook/documentation/file-header-pattern.md) - JSDoc file headers

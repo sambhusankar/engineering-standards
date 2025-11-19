@@ -142,6 +142,6 @@ cache:
 
 ## Related Notes
 
-- [GitHub Actions Integration](./ci-cd-github-actions.md) - Basic workflow setup
-- [CI Optimization](./ci-cd-optimization.md) - Performance tuning
-- [CI Troubleshooting](./ci-cd-troubleshooting.md) - Common issues
+- [GitHub Actions Integration](/storybook/testing/ci-cd-github-actions.md) - Basic workflow setup
+- [CI Optimization](/storybook/testing/ci-cd-optimization.md) - Performance tuning
+- [CI Troubleshooting](/storybook/testing/ci-cd-troubleshooting.md) - Common issues

@@ -26,16 +26,16 @@ For CRUD applications and typical business logic, functional programming provide
 
 ## Core Functional Patterns
 
-### [Pure Functions](../architecture/functional/pure-functions.md)
+### [Pure Functions](/architecture/functional/pure-functions.md)
 Functions that always return the same output for the same input, with no side effects.
 
-### [Function Composition](../architecture/functional/function-composition.md)
+### [Function Composition](/architecture/functional/function-composition.md)
 Build complex behavior from simple functions using composition and higher-order functions.
 
-### [Immutability](../architecture/functional/immutability-patterns.md)
+### [Immutability](/architecture/functional/immutability-patterns.md)
 Avoid mutating data; create new data instead for predictability.
 
-### [Array Functional Methods](../architecture/functional/array-methods-functional.md)
+### [Array Functional Methods](/architecture/functional/array-methods-functional.md)
 Use map, filter, reduce and other array methods for declarative transformations.
 
 ## Quick Examples
@@ -114,7 +114,7 @@ class ValidationError extends Error {
 ```
 
 ## Related Notes
-- [Module Organization](../architecture/modules/module-organization.md)
-- [Service Layer Pattern](../architecture/modules/service-layer-pattern.md)
-- [Error Boundaries](../architecture/error-boundaries.md)
-- [JavaScript with JSDoc](./javascript-with-jsdoc.md)
+- [Module Organization](/architecture/modules/module-organization.md)
+- [Service Layer Pattern](/architecture/modules/service-layer-pattern.md)
+- [Error Boundaries](/architecture/error-boundaries.md)
+- [JavaScript with JSDoc](/principles/javascript-with-jsdoc.md)

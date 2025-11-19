@@ -161,6 +161,6 @@ const interact_with_portaled_ui = async ({ canvasElement }) => {
 ```
 
 ## Related Notes
-- [Auto-Open Pattern](./play-functions-auto-open-pattern.md) - Auto-opening collapsed UI
-- [Waiting Strategies](./play-functions-waiting-strategies.md) - Advanced waiting patterns
-- [Play Functions](./play-functions.md) - Overview
+- [Auto-Open Pattern](/storybook/play-functions/play-functions-auto-open-pattern.md) - Auto-opening collapsed UI
+- [Waiting Strategies](/storybook/play-functions/play-functions-waiting-strategies.md) - Advanced waiting patterns
+- [Play Functions](/storybook/play-functions/play-functions.md) - Overview

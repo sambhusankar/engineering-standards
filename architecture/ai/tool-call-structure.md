@@ -317,6 +317,6 @@ toolCalls.forEach(call => {
 ```
 
 ## Related Notes
-- [Tool Definition Pattern](./ai-tool-definition-pattern.md) - Creating tools
-- [AI SDK Server Integration](./ai-sdk-server-streaming.md) - Tool execution
-- [Event Tracking Pattern](./event-tracking-analytics.md) - Tracking tool usage
+- [Tool Definition Pattern](/architecture/ai/ai-tool-definition-pattern.md) - Creating tools
+- [AI SDK Server Integration](/architecture/ai/ai-sdk-server-streaming.md) - Tool execution
+- [Event Tracking Pattern](/architecture/ai/event-tracking-analytics.md) - Tracking tool usage

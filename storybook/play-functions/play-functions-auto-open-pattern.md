@@ -110,7 +110,7 @@ await waitFor(() => new Promise((resolve) => setTimeout(resolve, 1000)));
 - Static components
 
 ## Related Notes
-- [When to Use Play Functions](./play-functions-when-to-use.md) - Decision guidelines
-- [Portaled Components](./play-functions-portaled-components.md) - Handling portals
-- [Waiting Strategies](./play-functions-waiting-strategies.md) - Advanced waiting patterns
-- [Play Functions](./play-functions.md) - Overview
+- [When to Use Play Functions](/storybook/play-functions/play-functions-when-to-use.md) - Decision guidelines
+- [Portaled Components](/storybook/play-functions/play-functions-portaled-components.md) - Handling portals
+- [Waiting Strategies](/storybook/play-functions/play-functions-waiting-strategies.md) - Advanced waiting patterns
+- [Play Functions](/storybook/play-functions/play-functions.md) - Overview

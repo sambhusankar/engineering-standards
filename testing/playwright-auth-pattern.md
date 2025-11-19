@@ -165,5 +165,5 @@ test-results/
 ```
 
 ## Related Notes
-- [Playwright E2E Structure](./playwright-e2e-structure.md)
-- [Playwright Helpers](./playwright-helpers.md)
+- [Playwright E2E Structure](/testing/playwright-e2e-structure.md)
+- [Playwright Helpers](/testing/playwright-helpers.md)

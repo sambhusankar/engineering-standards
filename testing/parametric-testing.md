@@ -131,6 +131,6 @@ Don't use when:
 - Only 1-2 test cases exist
 
 ## Related Notes
-- [AAA Pattern](./aaa-pattern.md)
-- [Test Utilities](./test-utilities.md)
-- [Fixture Loading](./fixture-loading.md)
+- [AAA Pattern](/testing/aaa-pattern.md)
+- [Test Utilities](/testing/test-utilities.md)
+- [Fixture Loading](/testing/fixture-loading.md)

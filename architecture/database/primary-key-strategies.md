@@ -86,5 +86,5 @@ sequelize.define('Members', {
 | API keys | INTEGER | Api_keys |
 
 ## Related Notes
-- [Column Naming](./column-naming.md) - Column naming conventions
-- [Model Definition Pattern](./model-definition-pattern.md) - Complete model structure
+- [Column Naming](/architecture/database/column-naming.md) - Column naming conventions
+- [Model Definition Pattern](/architecture/database/model-definition-pattern.md) - Complete model structure

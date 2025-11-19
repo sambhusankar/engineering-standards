@@ -92,6 +92,6 @@ Start with state in the component that needs it. Lift only when:
 - Multiple distant components need same data
 
 ## Related Notes
-- [State Management: Local vs Global](./state-management-local-vs-global.md)
-- [Context API Pattern](./context-api-pattern.md)
-- [Component Composition](../components/component-composition.md)
+- [State Management: Local vs Global](/architecture/state/state-management-local-vs-global.md)
+- [Context API Pattern](/architecture/state/context-api-pattern.md)
+- [Component Composition](/architecture/components/component-composition.md)

@@ -76,6 +76,6 @@ export function createOrder(overrides = {}) {
 ```
 
 ## Related Notes
-- [Test Independence](./test-independence.md)
-- [Setup and Teardown](./setup-teardown.md)
-- [AAA Pattern](./aaa-pattern.md)
+- [Test Independence](/testing/test-independence.md)
+- [Setup and Teardown](/testing/setup-teardown.md)
+- [AAA Pattern](/testing/aaa-pattern.md)

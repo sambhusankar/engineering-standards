@@ -43,5 +43,5 @@ if (active && permission) { }
 ```
 
 ## Related Notes
-- [Variables: snake_case](./variables-snake-case.md)
-- [Functions: camelCase](./functions-camelcase.md)
+- [Variables: snake_case](/naming/variables-snake-case.md)
+- [Functions: camelCase](/naming/functions-camelcase.md)

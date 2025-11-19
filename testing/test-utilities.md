@@ -129,6 +129,6 @@ Don't create utilities for:
 - Test-specific logic
 
 ## Related Notes
-- [Test Data Factories](./test-data-factories.md)
-- [Fixture Loading](./fixture-loading.md)
-- [Test Independence](./test-independence.md)
+- [Test Data Factories](/testing/test-data-factories.md)
+- [Fixture Loading](/testing/fixture-loading.md)
+- [Test Independence](/testing/test-independence.md)

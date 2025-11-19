@@ -144,9 +144,9 @@ function ToolMessage({ content }) {
 ```
 
 ## Related Notes
-- [AI SDK Server Integration](./ai-sdk-server-streaming.md) - Server-side streaming
-- [Message Format Normalization](./message-format-normalization.md) - Message handling
-- [Tool Call Structure](./tool-call-structure.md) - Displaying tool calls
-- [AI SDK Error Recovery](./ai-sdk-error-recovery.md) - Error handling and recovery
-- [AI SDK Dynamic Model Selection](./ai-sdk-dynamic-model-selection.md) - Model switching
-- [AI SDK Chat Persistence](./ai-sdk-chat-persistence.md) - LocalStorage management
+- [AI SDK Server Integration](/architecture/ai/ai-sdk-server-streaming.md) - Server-side streaming
+- [Message Format Normalization](/architecture/ai/message-format-normalization.md) - Message handling
+- [Tool Call Structure](/architecture/ai/tool-call-structure.md) - Displaying tool calls
+- [AI SDK Error Recovery](/architecture/ai/ai-sdk-error-recovery.md) - Error handling and recovery
+- [AI SDK Dynamic Model Selection](/architecture/ai/ai-sdk-dynamic-model-selection.md) - Model switching
+- [AI SDK Chat Persistence](/architecture/ai/ai-sdk-chat-persistence.md) - LocalStorage management

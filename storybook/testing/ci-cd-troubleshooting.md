@@ -69,7 +69,7 @@ await waitFor(() => expect(element).toBeVisible(), { timeout: 5000 });
     command: npm run storybook:test:ci
 ```
 
-See [Waiting Strategies](../play-functions/play-functions-waiting-strategies.md) for details.
+See [Waiting Strategies](/storybook/play-functions/play-functions-waiting-strategies.md) for details.
 
 ## "Out of memory errors"
 
@@ -272,7 +272,7 @@ docker:
 
 ## Related Notes
 
-- [GitHub Actions Integration](./ci-cd-github-actions.md) - Basic setup
-- [CI Optimization](./ci-cd-optimization.md) - Performance tuning
-- [Test Runner Config](./test-runner-config.md) - Configuration settings
-- [Running Tests Debugging](./running-tests-debugging.md) - Local debugging
+- [GitHub Actions Integration](/storybook/testing/ci-cd-github-actions.md) - Basic setup
+- [CI Optimization](/storybook/testing/ci-cd-optimization.md) - Performance tuning
+- [Test Runner Config](/storybook/testing/test-runner-config.md) - Configuration settings
+- [Running Tests Debugging](/storybook/testing/running-tests-debugging.md) - Local debugging

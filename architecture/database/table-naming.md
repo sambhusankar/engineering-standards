@@ -57,5 +57,5 @@ sequelize.define('Users', { /* ... */ }, {
 ```
 
 ## Related Notes
-- [Model File Naming](./model-file-naming.md) - File naming uses PascalCase
-- [Column Naming](./column-naming.md) - Column naming conventions
+- [Model File Naming](/architecture/database/model-file-naming.md) - File naming uses PascalCase
+- [Column Naming](/architecture/database/column-naming.md) - Column naming conventions

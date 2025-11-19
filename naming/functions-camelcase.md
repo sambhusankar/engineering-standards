@@ -74,5 +74,5 @@ const total_price = calculateTotal(shopping_cart);
 ```
 
 ## Related Notes
-- [Variables: snake_case](./variables-snake-case.md)
-- [Arrow Functions vs Declarations](../architecture/arrow-vs-declaration.md)
+- [Variables: snake_case](/naming/variables-snake-case.md)
+- [Arrow Functions vs Declarations](/architecture/arrow-vs-declaration.md)

@@ -125,6 +125,6 @@ apiClient.interceptors.response.use(
 ```
 
 ## Related Notes
-- [Module Organization](./module-organization.md)
-- [Functional Programming](../../principles/functional-programming.md)
-- [Custom Hooks for Data Fetching](../components/custom-hooks.md)
+- [Module Organization](/architecture/modules/module-organization.md)
+- [Functional Programming](/principles/functional-programming.md)
+- [Custom Hooks for Data Fetching](/architecture/components/custom-hooks.md)

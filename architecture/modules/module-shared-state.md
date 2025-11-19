@@ -103,6 +103,6 @@ const user = await getUser(api_client, '123');
 ```
 
 ## Related Notes
-- [Module Exports Pattern](./module-exports-pattern.md)
-- [Service Layer Pattern](./service-layer-pattern.md)
-- [Functional Programming](../../principles/functional-programming.md)
+- [Module Exports Pattern](/architecture/modules/module-exports-pattern.md)
+- [Service Layer Pattern](/architecture/modules/service-layer-pattern.md)
+- [Functional Programming](/principles/functional-programming.md)

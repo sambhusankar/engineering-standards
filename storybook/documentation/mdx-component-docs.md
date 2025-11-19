@@ -11,7 +11,7 @@ Component-level documentation using Storybook MDX files for comprehensive, custo
 - Full control over documentation content
 
 **Use MDX for**: Component-level documentation
-**Use parameters.description for**: Story-level context (see [Custom Description Banner](./custom-description-banner.md))
+**Use parameters.description for**: Story-level context (see [Custom Description Banner](/storybook/documentation/custom-description-banner.md))
 
 ## When to Create MDX Docs
 
@@ -365,7 +365,7 @@ Skip creating `.mdx` files for:
 Use `parameters.description` in stories as sufficient documentation for these.
 
 ## Related Notes
-- [Documentation Patterns](./documentation.md) - Multi-layer docs strategy
-- [Custom Description Banner](./custom-description-banner.md) - Story-level canvas descriptions
-- [File Header Pattern](./file-header-pattern.md) - JSDoc file headers
-- [Storybook User Journey Pattern](../storybook-user-journey-pattern.md) - Story philosophy
+- [Documentation Patterns](/storybook/documentation/documentation.md) - Multi-layer docs strategy
+- [Custom Description Banner](/storybook/documentation/custom-description-banner.md) - Story-level canvas descriptions
+- [File Header Pattern](/storybook/documentation/file-header-pattern.md) - JSDoc file headers
+- [Storybook User Journey Pattern](/storybook/storybook-user-journey-pattern.md) - Story philosophy

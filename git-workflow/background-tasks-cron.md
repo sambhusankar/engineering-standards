@@ -88,5 +88,5 @@ cron.schedule('0 * * * *', runScheduledTask);
 ```
 
 ## Related Notes
-- [Background Tasks: Job Queues](./background-tasks-queues.md)
-- [Environment Variables](./environment-variables.md)
+- [Background Tasks: Job Queues](/git-workflow/background-tasks-queues.md)
+- [Environment Variables](/git-workflow/environment-variables.md)

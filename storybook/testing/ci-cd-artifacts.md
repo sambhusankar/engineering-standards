@@ -168,6 +168,6 @@ Upload only on specific conditions:
 
 ## Related Notes
 
-- [GitHub Actions Integration](./ci-cd-github-actions.md) - Basic workflow
-- [Coverage Requirements](./coverage-requirements.md) - Understanding coverage
-- [CI Optimization](./ci-cd-optimization.md) - Performance tuning
+- [GitHub Actions Integration](/storybook/testing/ci-cd-github-actions.md) - Basic workflow
+- [Coverage Requirements](/storybook/testing/coverage-requirements.md) - Understanding coverage
+- [CI Optimization](/storybook/testing/ci-cd-optimization.md) - Performance tuning

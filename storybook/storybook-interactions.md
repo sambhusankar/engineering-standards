@@ -217,10 +217,10 @@ Don't use for:
 - Static display-only components
 
 ## Related Notes
-- [Play Functions](./play-functions/play-functions.md) - Overview of automated interactions
-- [Auto-Open Pattern](./play-functions/play-functions-auto-open-pattern.md) - Auto-opening collapsed UI
-- [Portaled Components](./play-functions/play-functions-portaled-components.md) - Handling portaled elements
-- [Waiting Strategies](./play-functions/play-functions-waiting-strategies.md) - Async waiting patterns
-- [Assertions and Queries](./play-functions/play-functions-assertions.md) - Testing and queries
-- [Storybook User Journey Pattern](./storybook-user-journey-pattern.md) - Story philosophy
-- [Storybook Mock Data](./storybook-mock-data.md) - Mock data patterns
+- [Play Functions](/storybook/play-functions/play-functions.md) - Overview of automated interactions
+- [Auto-Open Pattern](/storybook/play-functions/play-functions-auto-open-pattern.md) - Auto-opening collapsed UI
+- [Portaled Components](/storybook/play-functions/play-functions-portaled-components.md) - Handling portaled elements
+- [Waiting Strategies](/storybook/play-functions/play-functions-waiting-strategies.md) - Async waiting patterns
+- [Assertions and Queries](/storybook/play-functions/play-functions-assertions.md) - Testing and queries
+- [Storybook User Journey Pattern](/storybook/storybook-user-journey-pattern.md) - Story philosophy
+- [Storybook Mock Data](/storybook/storybook-mock-data.md) - Mock data patterns

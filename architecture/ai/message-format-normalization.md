@@ -272,6 +272,6 @@ function reconstructMessagesFromSteps(steps) {
 ```
 
 ## Related Notes
-- [AI SDK Server Integration](./ai-sdk-server-streaming.md) - Server message handling
-- [AI SDK Client Hooks](./ai-sdk-client-hooks.md) - Client message management
-- [Tool Call Structure](./tool-call-structure.md) - Tool-specific formats
+- [AI SDK Server Integration](/architecture/ai/ai-sdk-server-streaming.md) - Server message handling
+- [AI SDK Client Hooks](/architecture/ai/ai-sdk-client-hooks.md) - Client message management
+- [Tool Call Structure](/architecture/ai/tool-call-structure.md) - Tool-specific formats

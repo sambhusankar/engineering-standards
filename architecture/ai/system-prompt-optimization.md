@@ -217,4 +217,4 @@ Never include sensitive information in system prompts:
 ```
 
 ## Related Notes
-- [System Prompt Generation](./system-prompt-generation.md) - Core prompt generation
+- [System Prompt Generation](/architecture/ai/system-prompt-generation.md) - Core prompt generation

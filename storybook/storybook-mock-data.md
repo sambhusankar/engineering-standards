@@ -209,7 +209,7 @@ export default {
 - Testing unusual values
 
 ## Related Notes
-- [Decorators](./decorators.md) - Layout and context providers
-- [Storybook Interactions](./storybook-interactions.md) - Interaction patterns
-- [Play Functions](./play-functions/play-functions.md) - Automated interactions overview
-- [Meta Structure](./meta-structure.md) - Story file configuration
+- [Decorators](/storybook/decorators.md) - Layout and context providers
+- [Storybook Interactions](/storybook/storybook-interactions.md) - Interaction patterns
+- [Play Functions](/storybook/play-functions/play-functions.md) - Automated interactions overview
+- [Meta Structure](/storybook/meta-structure.md) - Story file configuration

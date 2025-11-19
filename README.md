@@ -20,8 +20,8 @@ These are **simple, opinionated standards** designed for **small teams** with sp
 ✅ **Fewer Moving Parts** - Reduced build steps and tooling overhead
 
 **Philosophy documents:**
-- [JavaScript with JSDoc](./principles/javascript-with-jsdoc.md) - Why plain JavaScript
-- [Functional Programming](./principles/functional-programming.md) - When to use FP vs OOP
+- [JavaScript with JSDoc](/principles/javascript-with-jsdoc.md) - Why plain JavaScript
+- [Functional Programming](/principles/functional-programming.md) - When to use FP vs OOP
 
 ## Why Atomic Notes?
 
@@ -122,7 +122,7 @@ This knowledge base is optimized for LLM consumption:
 - **List files first**: Use `ls` or glob patterns to see available notes
 - **Stay focused**: Each note addresses one concept
 
-See [CLAUDE.md](./CLAUDE.md) for detailed usage guidance.
+See [CLAUDE.md](/CLAUDE.md) for detailed usage guidance.
 
 ## For Other Projects
 
@@ -132,7 +132,7 @@ See [CLAUDE.md](./CLAUDE.md) for detailed usage guidance.
 2. Link to specific notes when documenting patterns
 3. Treat this as the source of truth for standards
 
-See [templates/CLAUDE.md.template](./templates/CLAUDE.md.template) for how to integrate these standards into your project.
+See [templates/CLAUDE.md.template](/templates/CLAUDE.md.template) for how to integrate these standards into your project.
 
 ## Contributing
 
@@ -173,8 +173,8 @@ Each note follows this pattern:
 [Code example or explanation]
 
 ## Related Notes
-- [Link to related concept 1](./related-note.md)
-- [Link to related concept 2](../other-dir/note.md)
+- [Link to related concept 1](/directory/related-note.md)
+- [Link to related concept 2](/other-dir/note.md)
 ```
 
 **Key properties**:
@@ -185,11 +185,11 @@ Each note follows this pattern:
 
 ## Version History
 
-See [CHANGELOG.md](./CHANGELOG.md) for version history and major changes.
+See [CHANGELOG.md](/CHANGELOG.md) for version history and major changes.
 
 ## Questions?
 
-- **For LLM usage**: See [CLAUDE.md](./CLAUDE.md)
+- **For LLM usage**: See [CLAUDE.md](/CLAUDE.md)
 - **For atomic principles**: See `principles/documentation/` directory
 - **For specific standards**: Browse topic directories
 

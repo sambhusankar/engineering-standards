@@ -55,5 +55,5 @@ const user = await db.Users.findOne({ where: { email: 'test@example.com' } });
 ```
 
 ## Related Notes
-- [Sequelize Initialization](./sequelize-initialization.md) - Creating the Sequelize instance
-- [Model Definition Pattern](./model-definition-pattern.md) - Model factory functions
+- [Sequelize Initialization](/architecture/database/sequelize-initialization.md) - Creating the Sequelize instance
+- [Model Definition Pattern](/architecture/database/model-definition-pattern.md) - Model factory functions

@@ -159,5 +159,5 @@ Don't create helpers for:
 - Actions that are clearer inline
 
 ## Related Notes
-- [Playwright E2E Structure](./playwright-e2e-structure.md)
-- [Playwright Auth Pattern](./playwright-auth-pattern.md)
+- [Playwright E2E Structure](/testing/playwright-e2e-structure.md)
+- [Playwright Auth Pattern](/testing/playwright-auth-pattern.md)

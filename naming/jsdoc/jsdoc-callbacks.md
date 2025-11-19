@@ -81,6 +81,6 @@ function addListener(selector, eventType, handler) {
 ```
 
 ## Related Notes
-- [JSDoc Type Definitions](./typedef.md)
-- [JSDoc Generic Types](./generics.md)
-- [Arrow Functions vs Declarations](../../architecture/arrow-vs-declaration.md)
+- [JSDoc Type Definitions](/naming/jsdoc/typedef.md)
+- [JSDoc Generic Types](/naming/jsdoc/generics.md)
+- [Arrow Functions vs Declarations](/architecture/arrow-vs-declaration.md)

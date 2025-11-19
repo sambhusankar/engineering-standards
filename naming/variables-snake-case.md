@@ -93,6 +93,6 @@ function Component() {
 ```
 
 ## Related Notes
-- [Boolean Variables Prefix](./boolean-prefix.md)
-- [Constants: SCREAMING_SNAKE_CASE](./constants-screaming-snake.md)
-- [Functions: camelCase](./functions-camelcase.md)
+- [Boolean Variables Prefix](/naming/boolean-prefix.md)
+- [Constants: SCREAMING_SNAKE_CASE](/naming/constants-screaming-snake.md)
+- [Functions: camelCase](/naming/functions-camelcase.md)

@@ -66,6 +66,6 @@ function validateUser(userData) {
 ```
 
 ## Related Notes
-- [JSDoc Basic Annotations](./basic-annotations.md)
-- [JSDoc Generic Types](./generics.md)
-- [JSDoc Importing Types](./imports.md)
+- [JSDoc Basic Annotations](/naming/jsdoc/basic-annotations.md)
+- [JSDoc Generic Types](/naming/jsdoc/generics.md)
+- [JSDoc Importing Types](/naming/jsdoc/imports.md)

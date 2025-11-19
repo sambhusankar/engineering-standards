@@ -67,6 +67,6 @@ export async function trackEvent(
 ```
 
 ## Related Notes
-- [AI SDK Server Integration](./ai-sdk-server-streaming.md) - Where tracking is integrated
-- [Event Tracking Chat Events](./event-tracking-chat-events.md) - Chat-specific event tracking
-- [Tool Call Structure](./tool-call-structure.md) - Understanding tool calls
+- [AI SDK Server Integration](/architecture/ai/ai-sdk-server-streaming.md) - Where tracking is integrated
+- [Event Tracking Chat Events](/architecture/ai/event-tracking-chat-events.md) - Chat-specific event tracking
+- [Tool Call Structure](/architecture/ai/tool-call-structure.md) - Understanding tool calls

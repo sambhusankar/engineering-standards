@@ -59,9 +59,9 @@ export const AfterSuccessfulUpload = {
 
 ## See These Notes for Details
 
-- **[Storybook User Journey Pattern](./storybook-user-journey-pattern.md)** - How to structure stories
-- **[Storybook Interactions](./storybook-interactions.md)** - Play functions and assertions
-- **[Storybook Mock Data](./storybook-mock-data.md)** - Mock data patterns
+- **[Storybook User Journey Pattern](/testing/storybook-user-journey-pattern.md)** - How to structure stories
+- **[Storybook Interactions](/testing/storybook-interactions.md)** - Play functions and assertions
+- **[Storybook Mock Data](/testing/storybook-mock-data.md)** - Mock data patterns
 
 ## Jest is for Business Logic
 
@@ -73,12 +73,12 @@ Use Jest for testing:
 - Database operations
 
 See Jest-related notes:
-- [Jest Mocking Patterns](./jest-mocking-patterns.md)
-- [AAA Pattern](./aaa-pattern.md)
-- [Mock External Dependencies](./mock-external-dependencies.md)
+- [Jest Mocking Patterns](/testing/jest-mocking-patterns.md)
+- [AAA Pattern](/testing/aaa-pattern.md)
+- [Mock External Dependencies](/testing/mock-external-dependencies.md)
 
 ## Related Notes
-- [Storybook User Journey Pattern](./storybook-user-journey-pattern.md)
-- [Storybook Interactions](./storybook-interactions.md)
-- [Storybook Mock Data](./storybook-mock-data.md)
-- [Unit vs Integration Tests](./unit-vs-integration.md)
+- [Storybook User Journey Pattern](/testing/storybook-user-journey-pattern.md)
+- [Storybook Interactions](/testing/storybook-interactions.md)
+- [Storybook Mock Data](/testing/storybook-mock-data.md)
+- [Unit vs Integration Tests](/testing/unit-vs-integration.md)

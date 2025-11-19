@@ -58,6 +58,6 @@ module.exports = {
 - **Function coverage**: Percentage of functions called
 
 ## Related Notes
-- [Unit vs Integration Tests](./unit-vs-integration.md)
-- [Testing React Components](./testing-react-components.md)
-- [AAA Pattern](./aaa-pattern.md)
+- [Unit vs Integration Tests](/testing/unit-vs-integration.md)
+- [Testing React Components](/testing/testing-react-components.md)
+- [AAA Pattern](/testing/aaa-pattern.md)

@@ -60,6 +60,6 @@ Keep the header focused on orientation only. Do NOT include:
 - Implementation details (put in component file)
 
 ## Related Notes
-- [Storybook User Journey Pattern](../storybook-user-journey-pattern.md) - Philosophy behind this pattern
-- [Story Naming](../story-naming.md) - Detailed naming conventions
-- [Documentation Patterns](./documentation.md) - How this fits into the documentation strategy
+- [Storybook User Journey Pattern](/storybook/storybook-user-journey-pattern.md) - Philosophy behind this pattern
+- [Story Naming](/storybook/story-naming.md) - Detailed naming conventions
+- [Documentation Patterns](/storybook/documentation/documentation.md) - How this fits into the documentation strategy

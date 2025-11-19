@@ -66,6 +66,6 @@ function processTags(tags, id, users) {
 ```
 
 ## Related Notes
-- [JSDoc Type Definitions](./typedef.md)
-- [JSDoc Generic Types](./generics.md)
-- [JavaScript with JSDoc Principle](../../principles/javascript-with-jsdoc.md)
+- [JSDoc Type Definitions](/naming/jsdoc/typedef.md)
+- [JSDoc Generic Types](/naming/jsdoc/generics.md)
+- [JavaScript with JSDoc Principle](/principles/javascript-with-jsdoc.md)

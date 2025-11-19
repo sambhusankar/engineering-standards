@@ -110,6 +110,6 @@ test('user can register and login', async ({ page }) => {
 - Cross-system integration
 
 ## Related Notes
-- [Coverage Requirements](./coverage-requirements.md)
-- [Mock External Dependencies](./mock-external-dependencies.md)
-- [Testing React Components](./testing-react-components.md)
+- [Coverage Requirements](/testing/coverage-requirements.md)
+- [Mock External Dependencies](/testing/mock-external-dependencies.md)
+- [Testing React Components](/testing/testing-react-components.md)

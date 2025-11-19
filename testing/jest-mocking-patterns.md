@@ -110,7 +110,7 @@ const mockFetch = jest.fn().mockName('fetchSVC');
 ```
 
 ## Related Notes
-- [Mock External Dependencies](./mock-external-dependencies.md)
-- [Semantic Mocking](./semantic-mocking.md)
-- [Mock Cleanup](./mock-cleanup.md)
-- [Setup and Teardown](./setup-teardown.md)
+- [Mock External Dependencies](/testing/mock-external-dependencies.md)
+- [Semantic Mocking](/testing/semantic-mocking.md)
+- [Mock Cleanup](/testing/mock-cleanup.md)
+- [Setup and Teardown](/testing/setup-teardown.md)

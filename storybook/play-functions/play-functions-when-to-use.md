@@ -66,6 +66,6 @@ This story is specifically for manual interaction without automated interference
 | Static UI | ❌ No | Visual variants only |
 
 ## Related Notes
-- [Play Functions](./play-functions.md) - Overview and basic structure
-- [Auto-Open Pattern](./play-functions-auto-open-pattern.md) - Auto-opening dropdowns/dialogs
-- [Storybook User Journey Pattern](./storybook-user-journey-pattern.md) - Story philosophy
+- [Play Functions](/storybook/play-functions/play-functions.md) - Overview and basic structure
+- [Auto-Open Pattern](/storybook/play-functions/play-functions-auto-open-pattern.md) - Auto-opening dropdowns/dialogs
+- [Storybook User Journey Pattern](/storybook/play-functions/storybook-user-journey-pattern.md) - Story philosophy

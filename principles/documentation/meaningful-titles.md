@@ -49,5 +49,5 @@ Can't determine relevance without reading content.
 **Is it specific enough to determine relevance?** → Be more specific if no
 
 ## Related Notes
-- [Single Idea Per Note](./single-idea-per-note.md)
-- [Brevity](./brevity.md)
+- [Single Idea Per Note](/principles/documentation/single-idea-per-note.md)
+- [Brevity](/principles/documentation/brevity.md)

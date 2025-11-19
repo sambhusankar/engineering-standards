@@ -218,7 +218,7 @@ const result = users.reduce((acc, user) => {
 ```
 
 ## Related Notes
-- [Function Composition](./function-composition.md)
-- [Immutability Patterns](./immutability-patterns.md)
-- [Pure Functions](./pure-functions.md)
-- [Functional Programming](../../principles/functional-programming.md)
+- [Function Composition](/architecture/functional/function-composition.md)
+- [Immutability Patterns](/architecture/functional/immutability-patterns.md)
+- [Pure Functions](/architecture/functional/pure-functions.md)
+- [Functional Programming](/principles/functional-programming.md)

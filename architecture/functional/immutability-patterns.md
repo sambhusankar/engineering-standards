@@ -200,6 +200,6 @@ const next_state = produce(current_state, draft => {
 ```
 
 ## Related Notes
-- [Pure Functions](./pure-functions.md)
-- [Array Functional Methods](./array-methods-functional.md)
-- [Functional Programming](../../principles/functional-programming.md)
+- [Pure Functions](/architecture/functional/pure-functions.md)
+- [Array Functional Methods](/architecture/functional/array-methods-functional.md)
+- [Functional Programming](/principles/functional-programming.md)

@@ -98,6 +98,6 @@ describe('Data Service', () => {
 ```
 
 ## Related Notes
-- [Setup and Teardown](./setup-teardown.md)
-- [Test Independence](./test-independence.md)
-- [Jest Mocking Patterns](./jest-mocking-patterns.md)
+- [Setup and Teardown](/testing/setup-teardown.md)
+- [Test Independence](/testing/test-independence.md)
+- [Jest Mocking Patterns](/testing/jest-mocking-patterns.md)

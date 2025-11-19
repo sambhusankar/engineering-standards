@@ -56,7 +56,7 @@ mv Dialog.stories.js Dialog.ignore.stories.js
 
 **Better solution**: Fix the timing issues with `waitFor`.
 
-See [Waiting Strategies](../play-functions/play-functions-waiting-strategies.md).
+See [Waiting Strategies](/storybook/play-functions/play-functions-waiting-strategies.md).
 
 ### Stories Not Ready for Automation
 
@@ -134,7 +134,7 @@ npx test-storybook --pattern="Button"
 npx test-storybook
 ```
 
-See [Testing Pattern Matching](./testing-pattern-matching.md) for advanced patterns.
+See [Testing Pattern Matching](/storybook/testing/testing-pattern-matching.md) for advanced patterns.
 
 ## Filtering vs. Ignoring
 
@@ -226,7 +226,7 @@ async preVisit(page, context) {
 
 ## Related Notes
 
-- [Test Runner Config](./test-runner-config.md) - Configuration settings
-- [Test Runner Hooks](./test-runner-hooks.md) - Pre/post visit hooks
-- [Testing Pattern Matching](./testing-pattern-matching.md) - Runtime filtering
-- [Coverage Requirements](./coverage-requirements.md) - Coverage impact of ignoring
+- [Test Runner Config](/storybook/testing/test-runner-config.md) - Configuration settings
+- [Test Runner Hooks](/storybook/testing/test-runner-hooks.md) - Pre/post visit hooks
+- [Testing Pattern Matching](/storybook/testing/testing-pattern-matching.md) - Runtime filtering
+- [Coverage Requirements](/storybook/testing/coverage-requirements.md) - Coverage impact of ignoring

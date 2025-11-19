@@ -58,7 +58,7 @@ to_be_deleted: DataTypes.BOOLEAN,    // Pending action
 ```
 
 ## Related Notes
-- [Table Naming](./table-naming.md) - Table naming uses lowercase plural
-- [Timestamp Columns](./timestamp-columns.md) - Standard timestamp patterns
-- [Foreign Key Pattern](./foreign-key-pattern.md) - FK naming conventions
-- [Variables: snake_case](../../naming/variables-snake-case.md) - JavaScript variable naming
+- [Table Naming](/architecture/database/table-naming.md) - Table naming uses lowercase plural
+- [Timestamp Columns](/architecture/database/timestamp-columns.md) - Standard timestamp patterns
+- [Foreign Key Pattern](/architecture/database/foreign-key-pattern.md) - FK naming conventions
+- [Variables: snake_case](/naming/variables-snake-case.md) - JavaScript variable naming

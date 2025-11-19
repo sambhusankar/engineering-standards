@@ -117,6 +117,6 @@ user: {
 ```
 
 ## Related Notes
-- [Column Naming](./column-naming.md) - All columns use snake_case
-- [Primary Key Strategies](./primary-key-strategies.md) - Types of primary keys
-- [Table Naming](./table-naming.md) - Table names are plural
+- [Column Naming](/architecture/database/column-naming.md) - All columns use snake_case
+- [Primary Key Strategies](/architecture/database/primary-key-strategies.md) - Types of primary keys
+- [Table Naming](/architecture/database/table-naming.md) - Table names are plural

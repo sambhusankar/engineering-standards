@@ -141,6 +141,6 @@ module.exports = function({ types: t }) {
 **Current approach**: Manually write both JSDoc and `parameters.description` (accept duplication).
 
 ## Related Notes
-- [Custom Description Banner](./custom-description-banner.md) - Current manual implementation
-- [File Header Pattern](./file-header-pattern.md) - JSDoc file headers
-- [Documentation Patterns](./documentation.md) - Overall documentation strategy
+- [Custom Description Banner](/storybook/documentation/custom-description-banner.md) - Current manual implementation
+- [File Header Pattern](/storybook/documentation/file-header-pattern.md) - JSDoc file headers
+- [Documentation Patterns](/storybook/documentation/documentation.md) - Overall documentation strategy

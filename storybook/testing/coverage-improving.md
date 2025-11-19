@@ -23,7 +23,7 @@ touch src/components/ui/Button.stories.jsx
 
 ### 3. Write Stories
 
-Follow [User Journey Pattern](../storybook-user-journey-pattern.md):
+Follow [User Journey Pattern](/storybook/storybook-user-journey-pattern.md):
 
 ```javascript
 import Button from './Button';
@@ -207,9 +207,9 @@ Added stories for: Button, Card, Input
 - No components are forgotten
 
 ### Quality Requires:
-- Following [User Journey Pattern](../storybook-user-journey-pattern.md)
-- Writing meaningful [Descriptions](../documentation/custom-description-banner.md)
-- Adding appropriate [Play Functions](../play-functions/play-functions.md)
+- Following [User Journey Pattern](/storybook/storybook-user-journey-pattern.md)
+- Writing meaningful [Descriptions](/storybook/documentation/custom-description-banner.md)
+- Adding appropriate [Play Functions](/storybook/play-functions/play-functions.md)
 - Covering edge cases and error states
 
 **Example of low-quality but covered**:
@@ -271,7 +271,7 @@ ls -la src/components/ui/Button*
 
 ## Related Notes
 
-- [Coverage Script](./coverage-script.md) - How coverage is calculated
-- [Coverage Requirements](./coverage-requirements.md) - What counts as covered
-- [Coverage Reports](./coverage-reports.md) - Understanding output
-- [User Journey Pattern](../storybook-user-journey-pattern.md) - Writing quality stories
+- [Coverage Script](/storybook/testing/coverage-script.md) - How coverage is calculated
+- [Coverage Requirements](/storybook/testing/coverage-requirements.md) - What counts as covered
+- [Coverage Reports](/storybook/testing/coverage-reports.md) - Understanding output
+- [User Journey Pattern](/storybook/storybook-user-journey-pattern.md) - Writing quality stories

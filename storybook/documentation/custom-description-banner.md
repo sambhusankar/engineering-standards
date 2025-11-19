@@ -105,7 +105,7 @@ parameters: {
 **We do NOT use Storybook's autodocs feature**. Instead:
 
 - **Story-level docs**: Use `parameters.description` (custom banner in canvas)
-- **Component-level docs**: Use `.mdx` files for detailed component documentation (see [MDX Component Docs](./mdx-component-docs.md))
+- **Component-level docs**: Use `.mdx` files for detailed component documentation (see [MDX Component Docs](/storybook/documentation/mdx-component-docs.md))
 
 This approach provides:
 - Immediate visual context in the canvas
@@ -150,7 +150,7 @@ Story context currently appears in both JSDoc comments and `parameters.descripti
 - Developers see context when reading code (JSDoc)
 - Reviewers see context when viewing stories in canvas (banner)
 
-**Future enhancement**: Auto-extract descriptions from JSDoc to eliminate duplication. See [Auto-Extract Description from JSDoc](./auto-extract-description-from-jsdoc.md) for exploration.
+**Future enhancement**: Auto-extract descriptions from JSDoc to eliminate duplication. See [Auto-Extract Description from JSDoc](/storybook/documentation/auto-extract-description-from-jsdoc.md) for exploration.
 
 ## Implementation Details
 
@@ -194,9 +194,9 @@ export const DeveloperInteractive = {
 ```
 
 ## Related Notes
-- [Documentation Patterns](./documentation.md) - Multi-layer docs approach
-- [MDX Component Docs](./mdx-component-docs.md) - Component-level MDX documentation
-- [Story Naming](../story-naming.md) - User journey naming
-- [Storybook User Journey Pattern](../storybook-user-journey-pattern.md) - Overall pattern philosophy
-- [Meta Structure](../meta-structure.md) - Parameters configuration
-- [Auto-Extract Description from JSDoc](./auto-extract-description-from-jsdoc.md) - Future enhancement exploration
+- [Documentation Patterns](/storybook/documentation/documentation.md) - Multi-layer docs approach
+- [MDX Component Docs](/storybook/documentation/mdx-component-docs.md) - Component-level MDX documentation
+- [Story Naming](/storybook/story-naming.md) - User journey naming
+- [Storybook User Journey Pattern](/storybook/storybook-user-journey-pattern.md) - Overall pattern philosophy
+- [Meta Structure](/storybook/meta-structure.md) - Parameters configuration
+- [Auto-Extract Description from JSDoc](/storybook/documentation/auto-extract-description-from-jsdoc.md) - Future enhancement exploration

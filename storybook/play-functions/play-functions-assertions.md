@@ -41,7 +41,7 @@ const dialog = document.querySelector('[role="dialog"]');
 const menu = document.querySelector('[role="menu"]');
 ```
 
-See: [Portaled Components](./play-functions-portaled-components.md) for details.
+See: [Portaled Components](/storybook/play-functions/play-functions-portaled-components.md) for details.
 
 ## Common Assertions
 
@@ -186,6 +186,6 @@ const menuItem = document.querySelector('[data-value="item"]');
 ```
 
 ## Related Notes
-- [Portaled Components](./play-functions-portaled-components.md) - Querying portaled elements
-- [Waiting Strategies](./play-functions-waiting-strategies.md) - Waiting for async assertions
-- [Play Functions](./play-functions.md) - Overview
+- [Portaled Components](/storybook/play-functions/play-functions-portaled-components.md) - Querying portaled elements
+- [Waiting Strategies](/storybook/play-functions/play-functions-waiting-strategies.md) - Waiting for async assertions
+- [Play Functions](/storybook/play-functions/play-functions.md) - Overview

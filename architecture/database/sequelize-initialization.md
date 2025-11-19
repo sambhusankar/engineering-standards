@@ -42,5 +42,5 @@ export { getSequelizeInstance };
 - **Export function, not instance**: Allows lazy initialization
 
 ## Related Notes
-- [Database Initialization](./database-initialization.md) - Using Sequelize instance to initialize models
-- [Model Definition Pattern](./model-definition-pattern.md) - How models use this instance
+- [Database Initialization](/architecture/database/database-initialization.md) - Using Sequelize instance to initialize models
+- [Model Definition Pattern](/architecture/database/model-definition-pattern.md) - How models use this instance

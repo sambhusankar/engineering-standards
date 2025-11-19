@@ -125,7 +125,7 @@ test('should save transactions', async () => {
 ```
 
 ## Related Notes
-- [Jest Mocking Patterns](./jest-mocking-patterns.md)
-- [Semantic Mocking](./semantic-mocking.md)
-- [Test Independence](./test-independence.md)
-- [Setup and Teardown](./setup-teardown.md)
+- [Jest Mocking Patterns](/testing/jest-mocking-patterns.md)
+- [Semantic Mocking](/testing/semantic-mocking.md)
+- [Test Independence](/testing/test-independence.md)
+- [Setup and Teardown](/testing/setup-teardown.md)

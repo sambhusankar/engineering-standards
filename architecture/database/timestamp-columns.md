@@ -81,5 +81,5 @@ await db.Orgs.update({
 ```
 
 ## Related Notes
-- [Column Naming](./column-naming.md) - All columns use snake_case
-- [Model Definition Pattern](./model-definition-pattern.md) - Model structure
+- [Column Naming](/architecture/database/column-naming.md) - All columns use snake_case
+- [Model Definition Pattern](/architecture/database/model-definition-pattern.md) - Model structure

@@ -274,6 +274,6 @@ argTypes: {
 ```
 
 ## Related Notes
-- [Meta Structure](./meta-structure.md) - Story file configuration
-- [Story Naming](./story-naming.md) - User journey naming
-- [Decorators](./decorators.md) - Layout and context providers
+- [Meta Structure](/storybook/meta-structure.md) - Story file configuration
+- [Story Naming](/storybook/story-naming.md) - User journey naming
+- [Decorators](/storybook/decorators.md) - Layout and context providers

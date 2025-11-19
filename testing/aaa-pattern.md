@@ -55,6 +55,6 @@ test('should calculate discount for multiple items', () => {
 ```
 
 ## Related Notes
-- [Test Naming Conventions](./test-naming.md)
-- [Test Independence](./test-independence.md)
-- [Setup and Teardown](./setup-teardown.md)
+- [Test Naming Conventions](/testing/test-naming.md)
+- [Test Independence](/testing/test-independence.md)
+- [Setup and Teardown](/testing/setup-teardown.md)

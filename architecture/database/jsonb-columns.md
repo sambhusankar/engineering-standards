@@ -103,4 +103,4 @@ defaultValue: []
 ```
 
 ## Related Notes
-- [Column Naming](./column-naming.md) - JSONB column naming (snake_case)
+- [Column Naming](/architecture/database/column-naming.md) - JSONB column naming (snake_case)

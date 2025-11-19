@@ -183,5 +183,5 @@ function ChatBot({ initialMessages = [] }) {
 ```
 
 ## Related Notes
-- [AI SDK Client Hooks](./ai-sdk-client-hooks.md) - Core useChat setup
-- [AI SDK Server Integration](./ai-sdk-server-streaming.md) - Receiving model selection on server
+- [AI SDK Client Hooks](/architecture/ai/ai-sdk-client-hooks.md) - Core useChat setup
+- [AI SDK Server Integration](/architecture/ai/ai-sdk-server-streaming.md) - Receiving model selection on server

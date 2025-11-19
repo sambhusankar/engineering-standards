@@ -29,5 +29,5 @@ Brief notes: Pattern visible in first 3 lines (2 seconds)
 Verbose notes: Scan paragraphs to find pattern (30 seconds)
 
 ## Related Notes
-- [Single Idea Per Note](./single-idea-per-note.md)
-- [Meaningful Titles](./meaningful-titles.md)
+- [Single Idea Per Note](/principles/documentation/single-idea-per-note.md)
+- [Meaningful Titles](/principles/documentation/meaningful-titles.md)

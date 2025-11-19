@@ -51,5 +51,5 @@ johns-work
 ```
 
 ## Related Notes
-- [Commit Message Format](./commit-format.md)
-- [Pull Request Guidelines](./pull-request-guidelines.md)
+- [Commit Message Format](/git-workflow/commit-format.md)
+- [Pull Request Guidelines](/git-workflow/pull-request-guidelines.md)

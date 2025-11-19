@@ -67,6 +67,6 @@ ShoppingCart
 ```
 
 ## Related Notes
-- [AAA Pattern](./aaa-pattern.md)
-- [Test Independence](./test-independence.md)
-- [Test File Naming](../naming/files-tests.md)
+- [AAA Pattern](/testing/aaa-pattern.md)
+- [Test Independence](/testing/test-independence.md)
+- [Test File Naming](/naming/files-tests.md)

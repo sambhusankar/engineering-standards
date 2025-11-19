@@ -62,7 +62,7 @@ Debug only failing component instead of full suite:
 npx test-storybook --pattern="FailingComponent"
 ```
 
-See [Testing Pattern Matching](./testing-pattern-matching.md) for pattern syntax.
+See [Testing Pattern Matching](/storybook/testing/testing-pattern-matching.md) for pattern syntax.
 
 ## Combine Debug Flags
 
@@ -96,7 +96,7 @@ CI=true npx test-storybook
 3. **Missing environment variables** - CI has different env vars
    - Ensure CI has same env vars as local
 
-See [CI Troubleshooting](./ci-cd-troubleshooting.md) for detailed solutions.
+See [CI Troubleshooting](/storybook/testing/ci-cd-troubleshooting.md) for detailed solutions.
 
 ### "Flaky tests that randomly fail"
 
@@ -123,7 +123,7 @@ See [CI Troubleshooting](./ci-cd-troubleshooting.md) for detailed solutions.
    retries: 2  // Retry twice on failure
    ```
 
-See [Waiting Strategies](../play-functions/play-functions-waiting-strategies.md) for details.
+See [Waiting Strategies](/storybook/play-functions/play-functions-waiting-strategies.md) for details.
 
 ### "Element not found" errors
 
@@ -143,7 +143,7 @@ npx test-storybook --pattern="Component" --headed
 - Check selector is correct
 - For portaled elements, use `document.querySelector`
 
-See [Portaled Components](../play-functions/play-functions-portaled-components.md).
+See [Portaled Components](/storybook/play-functions/play-functions-portaled-components.md).
 
 ### "Tests timeout"
 
@@ -226,7 +226,7 @@ In GitHub Actions:
 
 **Download artifacts** from GitHub UI to view reports locally.
 
-See [CI Artifacts](./ci-cd-artifacts.md) for details.
+See [CI Artifacts](/storybook/testing/ci-cd-artifacts.md) for details.
 
 ### Run CI Command Locally
 
@@ -239,8 +239,8 @@ CI=true npm run storybook:test:ci
 
 ## Related Notes
 
-- [Running Tests Development](./running-tests-development.md) - Local development
-- [Running Tests CI](./running-tests-ci.md) - CI/CD commands
-- [Testing Debugging Individual](./testing-debugging-individual.md) - Individual story debugging
-- [CI Troubleshooting](./ci-cd-troubleshooting.md) - CI-specific issues
-- [Waiting Strategies](../play-functions/play-functions-waiting-strategies.md) - Timing issues
+- [Running Tests Development](/storybook/testing/running-tests-development.md) - Local development
+- [Running Tests CI](/storybook/testing/running-tests-ci.md) - CI/CD commands
+- [Testing Debugging Individual](/storybook/testing/testing-debugging-individual.md) - Individual story debugging
+- [CI Troubleshooting](/storybook/testing/ci-cd-troubleshooting.md) - CI-specific issues
+- [Waiting Strategies](/storybook/play-functions/play-functions-waiting-strategies.md) - Timing issues

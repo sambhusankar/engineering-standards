@@ -35,5 +35,5 @@ Provide helpful, accurate assistance using available resources and capabilities.
 ```
 
 ## Related Notes
-- [AI SDK Server Integration](./ai-sdk-server-streaming.md) - Where prompts are used
-- [System Prompt Optimization](./system-prompt-optimization.md) - Templates and performance
+- [AI SDK Server Integration](/architecture/ai/ai-sdk-server-streaming.md) - Where prompts are used
+- [System Prompt Optimization](/architecture/ai/system-prompt-optimization.md) - Templates and performance

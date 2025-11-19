@@ -105,5 +105,5 @@ emailQueue.on('completed', (job) => {
 - Distributed processing
 
 ## Related Notes
-- [Background Tasks: Cron Jobs](./background-tasks-cron.md)
-- [Environment Variables](./environment-variables.md)
+- [Background Tasks: Cron Jobs](/git-workflow/background-tasks-cron.md)
+- [Environment Variables](/git-workflow/environment-variables.md)

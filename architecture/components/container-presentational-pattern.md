@@ -70,6 +70,6 @@ Don't over-apply:
 - Small apps may not need separation
 
 ## Related Notes
-- [Custom Hooks Pattern](./custom-hooks.md)
-- [Component Composition](./component-composition.md)
-- [State Management](../state/state-management-local-vs-global.md)
+- [Custom Hooks Pattern](/architecture/components/custom-hooks.md)
+- [Component Composition](/architecture/components/component-composition.md)
+- [State Management](/architecture/state/state-management-local-vs-global.md)

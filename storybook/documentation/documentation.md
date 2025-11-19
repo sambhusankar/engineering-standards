@@ -9,17 +9,17 @@ Our Storybook documentation uses three distinct, complementary layers:
 ### Layer 1: File Header (JSDoc)
 **Purpose**: Orient developers to user journey pattern
 **Location**: Top of every `.stories.js` file
-**Read**: [File Header Pattern](./file-header-pattern.md)
+**Read**: [File Header Pattern](/storybook/documentation/file-header-pattern.md)
 
 ### Layer 2: Story Description (Canvas Banner)
 **Purpose**: Explain user context for each story
 **Location**: `parameters.description` in each story
-**Read**: [Custom Description Banner](./custom-description-banner.md)
+**Read**: [Custom Description Banner](/storybook/documentation/custom-description-banner.md)
 
 ### Layer 3: Component Documentation (MDX)
 **Purpose**: Comprehensive component-level docs
 **Location**: `.mdx` file alongside component
-**Read**: [MDX Component Docs](./mdx-component-docs.md)
+**Read**: [MDX Component Docs](/storybook/documentation/mdx-component-docs.md)
 
 ## Why Three Layers?
 
@@ -103,8 +103,8 @@ Use DatePicker when you need single date selection...
 ```
 
 ## Related Notes
-- [File Header Pattern](./file-header-pattern.md) - JSDoc headers for story files
-- [Custom Description Banner](./custom-description-banner.md) - Story-level canvas descriptions
-- [MDX Component Docs](./mdx-component-docs.md) - Component-level documentation
-- [Storybook User Journey Pattern](../storybook-user-journey-pattern.md) - Overall philosophy
-- [Story Naming](../story-naming.md) - User journey naming conventions
+- [File Header Pattern](/storybook/documentation/file-header-pattern.md) - JSDoc headers for story files
+- [Custom Description Banner](/storybook/documentation/custom-description-banner.md) - Story-level canvas descriptions
+- [MDX Component Docs](/storybook/documentation/mdx-component-docs.md) - Component-level documentation
+- [Storybook User Journey Pattern](/storybook/storybook-user-journey-pattern.md) - Overall philosophy
+- [Story Naming](/storybook/story-naming.md) - User journey naming conventions

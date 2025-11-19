@@ -56,7 +56,7 @@ Creates three outputs:
 - Markdown report (`dev_docs/storybook/coverage-report.md`)
 - SVG badge (`dev_docs/storybook/coverage-badge.svg`)
 
-See [Coverage Reports](./coverage-reports.md) for details.
+See [Coverage Reports](/storybook/testing/coverage-reports.md) for details.
 
 ### 5. Exits with Error Code
 
@@ -129,6 +129,6 @@ coverage_percentage = (components_with_stories / total_components) * 100
 
 ## Related Notes
 
-- [Coverage Requirements](./coverage-requirements.md) - What counts as component/covered
-- [Coverage Reports](./coverage-reports.md) - Report formats and badges
-- [Coverage Improving](./coverage-improving.md) - Strategies to improve coverage
+- [Coverage Requirements](/storybook/testing/coverage-requirements.md) - What counts as component/covered
+- [Coverage Reports](/storybook/testing/coverage-reports.md) - Report formats and badges
+- [Coverage Improving](/storybook/testing/coverage-improving.md) - Strategies to improve coverage

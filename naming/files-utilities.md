@@ -51,6 +51,6 @@ export function truncate(str, max_length) {
 ```
 
 ## Related Notes
-- [Files: Components](./files-components.md)
-- [Files: Tests](./files-tests.md)
-- [Utility Modules](../architecture/modules/utility-modules.md)
+- [Files: Components](/naming/files-components.md)
+- [Files: Tests](/naming/files-tests.md)
+- [Utility Modules](/architecture/modules/utility-modules.md)

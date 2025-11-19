@@ -49,7 +49,7 @@ module.exports = function(sequelize) {
 - **Single responsibility**: Each file defines one model
 
 ## Related Notes
-- [Sequelize Initialization](./sequelize-initialization.md) - Creating the Sequelize instance
-- [Database Initialization](./database-initialization.md) - Calling these factory functions
-- [Model File Naming](./model-file-naming.md) - How to name model files
-- [Table Naming](./table-naming.md) - tableName option convention
+- [Sequelize Initialization](/architecture/database/sequelize-initialization.md) - Creating the Sequelize instance
+- [Database Initialization](/architecture/database/database-initialization.md) - Calling these factory functions
+- [Model File Naming](/architecture/database/model-file-naming.md) - How to name model files
+- [Table Naming](/architecture/database/table-naming.md) - tableName option convention

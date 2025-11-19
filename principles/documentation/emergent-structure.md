@@ -52,5 +52,5 @@ storybook/
 **No artificial constraints**: Don't force wrong categories
 
 ## Related Notes
-- [Cross-Linking Notes](./cross-linking-notes.md)
-- [Single Idea Per Note](./single-idea-per-note.md)
+- [Cross-Linking Notes](/principles/documentation/cross-linking-notes.md)
+- [Single Idea Per Note](/principles/documentation/single-idea-per-note.md)

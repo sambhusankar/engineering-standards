@@ -99,7 +99,7 @@ CI=true npx test-storybook --pattern="Component"
 2. Viewport differences
 3. Environment variables
 
-See [CI Troubleshooting](./ci-cd-troubleshooting.md) for solutions.
+See [CI Troubleshooting](/storybook/testing/ci-cd-troubleshooting.md) for solutions.
 
 ### "Play function doesn't complete"
 
@@ -116,7 +116,7 @@ npx test-storybook --pattern="Component" --headed
 
 **Fix**: Add explicit waits, increase timeouts.
 
-See [Waiting Strategies](../play-functions/play-functions-waiting-strategies.md).
+See [Waiting Strategies](/storybook/play-functions/play-functions-waiting-strategies.md).
 
 ### "Element not found errors"
 
@@ -140,7 +140,7 @@ await waitFor(() => expect(element).toBeVisible());
 const dialog = document.querySelector('[role="dialog"]');
 ```
 
-See [Portaled Components](../play-functions/play-functions-portaled-components.md).
+See [Portaled Components](/storybook/play-functions/play-functions-portaled-components.md).
 
 ### "Console errors fail test"
 
@@ -222,8 +222,8 @@ CI=true TEST_WORKERS=4 TEST_TIMEOUT=60000 \
 
 ## Related Notes
 
-- [Testing Pattern Matching](./testing-pattern-matching.md) - Focusing on specific tests
-- [Testing Development Workflow](./testing-development-workflow.md) - Daily testing patterns
-- [CI Troubleshooting](./ci-cd-troubleshooting.md) - CI-specific issues
-- [Play Functions Waiting Strategies](../play-functions/play-functions-waiting-strategies.md) - Timing fixes
-- [Play Functions Portaled Components](../play-functions/play-functions-portaled-components.md) - Finding portaled elements
+- [Testing Pattern Matching](/storybook/testing/testing-pattern-matching.md) - Focusing on specific tests
+- [Testing Development Workflow](/storybook/testing/testing-development-workflow.md) - Daily testing patterns
+- [CI Troubleshooting](/storybook/testing/ci-cd-troubleshooting.md) - CI-specific issues
+- [Play Functions Waiting Strategies](/storybook/play-functions/play-functions-waiting-strategies.md) - Timing fixes
+- [Play Functions Portaled Components](/storybook/play-functions/play-functions-portaled-components.md) - Finding portaled elements

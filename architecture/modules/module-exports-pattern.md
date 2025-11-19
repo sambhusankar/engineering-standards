@@ -105,7 +105,7 @@ export default function(user_id) { }
 ```
 
 ## Related Notes
-- [Service Layer Pattern](./service-layer-pattern.md)
-- [Utility Modules](./utility-modules.md)
-- [Module Shared State](./module-shared-state.md)
-- [Functional Programming](../../principles/functional-programming.md)
+- [Service Layer Pattern](/architecture/modules/service-layer-pattern.md)
+- [Utility Modules](/architecture/modules/utility-modules.md)
+- [Module Shared State](/architecture/modules/module-shared-state.md)
+- [Functional Programming](/principles/functional-programming.md)

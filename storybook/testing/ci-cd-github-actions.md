@@ -177,7 +177,7 @@ CI can be slower than local, so increase timeouts.
 
 ## Related Notes
 
-- [CI Caching Strategies](./ci-cd-caching.md) - Speed up builds with caching
-- [CI Artifacts and Reports](./ci-cd-artifacts.md) - Upload test results
-- [CI Optimization](./ci-cd-optimization.md) - Performance tuning
-- [CI Troubleshooting](./ci-cd-troubleshooting.md) - Common CI issues
+- [CI Caching Strategies](/storybook/testing/ci-cd-caching.md) - Speed up builds with caching
+- [CI Artifacts and Reports](/storybook/testing/ci-cd-artifacts.md) - Upload test results
+- [CI Optimization](/storybook/testing/ci-cd-optimization.md) - Performance tuning
+- [CI Troubleshooting](/storybook/testing/ci-cd-troubleshooting.md) - Common CI issues

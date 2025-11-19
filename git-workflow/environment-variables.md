@@ -109,5 +109,5 @@ const dbCreds = await getSecret('production/database');
 ```
 
 ## Related Notes
-- [Background Tasks: Cron Jobs](./background-tasks-cron.md)
-- [Background Tasks: Job Queues](./background-tasks-queues.md)
+- [Background Tasks: Cron Jobs](/git-workflow/background-tasks-cron.md)
+- [Background Tasks: Job Queues](/git-workflow/background-tasks-queues.md)

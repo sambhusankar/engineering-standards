@@ -26,7 +26,7 @@ Total: 85s (~1.5 minutes)
 
 ### 1. Cache Aggressively
 
-See [CI Caching Strategies](./ci-cd-caching.md) for details.
+See [CI Caching Strategies](/storybook/testing/ci-cd-caching.md) for details.
 
 **Quick wins**:
 - Dependencies: `cache: 'npm'` in setup-node action
@@ -211,6 +211,6 @@ Compare runs in GitHub Actions UI to identify slowdowns.
 
 ## Related Notes
 
-- [CI Caching Strategies](./ci-cd-caching.md) - Detailed caching setup
-- [GitHub Actions Integration](./ci-cd-github-actions.md) - Basic workflow
-- [CI Troubleshooting](./ci-cd-troubleshooting.md) - Common issues
+- [CI Caching Strategies](/storybook/testing/ci-cd-caching.md) - Detailed caching setup
+- [GitHub Actions Integration](/storybook/testing/ci-cd-github-actions.md) - Basic workflow
+- [CI Troubleshooting](/storybook/testing/ci-cd-troubleshooting.md) - Common issues

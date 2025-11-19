@@ -194,6 +194,6 @@ export function generateGetNotifications({ cookieStore, context_id }) {
 - **Type Safety**: Zod schemas provide runtime validation and IDE autocomplete
 
 ## Related Notes
-- [Tool Call Structure](./tool-call-structure.md) - Handling tool invocation responses
-- [AI SDK Server Integration](./ai-sdk-server-streaming.md) - Using tools in streaming
-- [Tool Generator Functions](./tool-generator-functions.md) - Detailed generator pattern
+- [Tool Call Structure](/architecture/ai/tool-call-structure.md) - Handling tool invocation responses
+- [AI SDK Server Integration](/architecture/ai/ai-sdk-server-streaming.md) - Using tools in streaming
+- [Tool Generator Functions](/architecture/ai/tool-generator-functions.md) - Detailed generator pattern

@@ -101,7 +101,7 @@ npm run storybook:test:ci
   run: npm run storybook:coverage
 ```
 
-See [CI GitHub Actions](./ci-cd-github-actions.md) for complete workflow.
+See [CI GitHub Actions](/storybook/testing/ci-cd-github-actions.md) for complete workflow.
 
 ### With Coverage Enforcement
 
@@ -142,7 +142,7 @@ npm run storybook:build
 3. Missing environment variables
 4. Different Node/browser versions
 
-See [CI Troubleshooting](./ci-cd-troubleshooting.md) for solutions.
+See [CI Troubleshooting](/storybook/testing/ci-cd-troubleshooting.md) for solutions.
 
 ## Performance Optimization
 
@@ -158,7 +158,7 @@ In CI, cache the `storybook-static` directory:
     key: storybook-${{ hashFiles('src/**/*.stories.*') }}
 ```
 
-See [CI Caching](./ci-cd-caching.md) for details.
+See [CI Caching](/storybook/testing/ci-cd-caching.md) for details.
 
 ### Increase Workers
 
@@ -174,12 +174,12 @@ Then in `.storybook/test-runner.js`:
 maxWorkers: process.env.TEST_WORKERS || 2
 ```
 
-See [CI Optimization](./ci-cd-optimization.md) for more strategies.
+See [CI Optimization](/storybook/testing/ci-cd-optimization.md) for more strategies.
 
 ## Related Notes
 
-- [Running Tests Development](./running-tests-development.md) - Local development commands
-- [Running Tests Debugging](./running-tests-debugging.md) - Debug failures
-- [CI GitHub Actions](./ci-cd-github-actions.md) - GitHub Actions integration
-- [CI Optimization](./ci-cd-optimization.md) - Performance tuning
-- [CI Troubleshooting](./ci-cd-troubleshooting.md) - Common CI issues
+- [Running Tests Development](/storybook/testing/running-tests-development.md) - Local development commands
+- [Running Tests Debugging](/storybook/testing/running-tests-debugging.md) - Debug failures
+- [CI GitHub Actions](/storybook/testing/ci-cd-github-actions.md) - GitHub Actions integration
+- [CI Optimization](/storybook/testing/ci-cd-optimization.md) - Performance tuning
+- [CI Troubleshooting](/storybook/testing/ci-cd-troubleshooting.md) - Common CI issues

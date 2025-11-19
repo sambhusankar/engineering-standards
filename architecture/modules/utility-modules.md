@@ -120,7 +120,7 @@ export function addToTotal(amount) {
 ```
 
 ## Related Notes
-- [Module Exports Pattern](./module-exports-pattern.md)
-- [Functional Programming](../../principles/functional-programming.md)
-- [Pure Functions](../functional/pure-functions.md)
-- [Files: Utilities](../../naming/files-utilities.md)
+- [Module Exports Pattern](/architecture/modules/module-exports-pattern.md)
+- [Functional Programming](/principles/functional-programming.md)
+- [Pure Functions](/architecture/functional/pure-functions.md)
+- [Files: Utilities](/naming/files-utilities.md)

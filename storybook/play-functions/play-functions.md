@@ -51,27 +51,27 @@ Play functions follow specific patterns depending on the use case:
 ### 1. When to Use Play Functions
 Decide when play functions add value vs when to skip them.
 
-**Read**: [When to Use Play Functions](./play-functions-when-to-use.md)
+**Read**: [When to Use Play Functions](/storybook/play-functions/play-functions-when-to-use.md)
 
 ### 2. Auto-Open Pattern
 Automatically open dropdowns, dialogs, and collapsed UI for visual review.
 
-**Read**: [Auto-Open Pattern](./play-functions-auto-open-pattern.md)
+**Read**: [Auto-Open Pattern](/storybook/play-functions/play-functions-auto-open-pattern.md)
 
 ### 3. Portaled Components
 Handle components that render outside the story canvas (modals, dropdowns).
 
-**Read**: [Portaled Components](./play-functions-portaled-components.md)
+**Read**: [Portaled Components](/storybook/play-functions/play-functions-portaled-components.md)
 
 ### 4. Waiting Strategies
 Wait for animations, transitions, and async operations.
 
-**Read**: [Waiting Strategies](./play-functions-waiting-strategies.md)
+**Read**: [Waiting Strategies](/storybook/play-functions/play-functions-waiting-strategies.md)
 
 ### 5. Assertions and Queries
 Query elements and make assertions about component state.
 
-**Read**: [Assertions and Queries](./play-functions-assertions.md)
+**Read**: [Assertions and Queries](/storybook/play-functions/play-functions-assertions.md)
 
 ## Quick Decision Guide
 
@@ -122,9 +122,9 @@ const verifyDateSelected = async ({ canvasElement }) => { /* ... */ };
 ```
 
 ## Related Notes
-- [When to Use Play Functions](./play-functions-when-to-use.md) - Decision guidelines
-- [Auto-Open Pattern](./play-functions-auto-open-pattern.md) - Auto-opening collapsed UI
-- [Portaled Components](./play-functions-portaled-components.md) - Handling portals
-- [Waiting Strategies](./play-functions-waiting-strategies.md) - Async waiting patterns
-- [Assertions and Queries](./play-functions-assertions.md) - Testing and queries
-- [Storybook Interactions](../storybook-interactions.md) - Detailed interaction patterns
+- [When to Use Play Functions](/storybook/play-functions/play-functions-when-to-use.md) - Decision guidelines
+- [Auto-Open Pattern](/storybook/play-functions/play-functions-auto-open-pattern.md) - Auto-opening collapsed UI
+- [Portaled Components](/storybook/play-functions/play-functions-portaled-components.md) - Handling portals
+- [Waiting Strategies](/storybook/play-functions/play-functions-waiting-strategies.md) - Async waiting patterns
+- [Assertions and Queries](/storybook/play-functions/play-functions-assertions.md) - Testing and queries
+- [Storybook Interactions](/storybook/storybook-interactions.md) - Detailed interaction patterns

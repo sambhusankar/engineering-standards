@@ -232,7 +232,7 @@ export async function POST(req) {
 - **Timeout**: Set `maxDuration` appropriately (30s for complex operations)
 
 ## Related Notes
-- [Message Format Normalization](./message-format-normalization.md) - Message conversion patterns
-- [Tool Definition Pattern](./ai-tool-definition-pattern.md) - Creating tools
-- [Tool Call Structure](./tool-call-structure.md) - Processing tool responses
-- [AI SDK Client Integration](./ai-sdk-client-hooks.md) - Client-side consumption
+- [Message Format Normalization](/architecture/ai/message-format-normalization.md) - Message conversion patterns
+- [Tool Definition Pattern](/architecture/ai/ai-tool-definition-pattern.md) - Creating tools
+- [Tool Call Structure](/architecture/ai/tool-call-structure.md) - Processing tool responses
+- [AI SDK Client Integration](/architecture/ai/ai-sdk-client-hooks.md) - Client-side consumption

@@ -154,6 +154,6 @@ With beforeAll:    500ms load time + (5 tests × 10ms) = 550ms
 ```
 
 ## Related Notes
-- [Setup and Teardown](./setup-teardown.md)
-- [Test Utilities](./test-utilities.md)
-- [Test Independence](./test-independence.md)
+- [Setup and Teardown](/testing/setup-teardown.md)
+- [Test Utilities](/testing/test-utilities.md)
+- [Test Independence](/testing/test-independence.md)

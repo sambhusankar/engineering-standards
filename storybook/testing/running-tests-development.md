@@ -110,7 +110,7 @@ npm run storybook:coverage
 - All existing tests still pass
 - Coverage hasn't dropped
 
-See [Running Tests CI](./running-tests-ci.md) for CI mode details.
+See [Running Tests CI](/storybook/testing/running-tests-ci.md) for CI mode details.
 
 ## Performance Tips
 
@@ -147,7 +147,7 @@ Instead of running all tests, use patterns:
 npx test-storybook --pattern="Button"
 ```
 
-See [Testing Pattern Matching](./testing-pattern-matching.md) for details.
+See [Testing Pattern Matching](/storybook/testing/testing-pattern-matching.md) for details.
 
 ## Exit Codes
 
@@ -185,7 +185,7 @@ sudo sysctl -p
 
 ## Related Notes
 
-- [Running Tests CI](./running-tests-ci.md) - CI/CD pipeline commands
-- [Running Tests Debugging](./running-tests-debugging.md) - Debug failing tests
-- [Testing Development Workflow](./testing-development-workflow.md) - Daily usage patterns
-- [Testing Pattern Matching](./testing-pattern-matching.md) - Testing specific components
+- [Running Tests CI](/storybook/testing/running-tests-ci.md) - CI/CD pipeline commands
+- [Running Tests Debugging](/storybook/testing/running-tests-debugging.md) - Debug failing tests
+- [Testing Development Workflow](/storybook/testing/testing-development-workflow.md) - Daily usage patterns
+- [Testing Pattern Matching](/storybook/testing/testing-pattern-matching.md) - Testing specific components

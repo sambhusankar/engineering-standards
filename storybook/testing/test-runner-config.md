@@ -223,7 +223,7 @@ Required packages:
 
 ## Related Notes
 
-- [Test Runner Hooks](./test-runner-hooks.md) - Pre/post visit hooks
-- [Test Runner Filtering](./test-runner-filtering.md) - Ignoring stories
-- [Running Tests Development](./running-tests-development.md) - Executing tests
-- [CI Optimization](./ci-cd-optimization.md) - Performance tuning
+- [Test Runner Hooks](/storybook/testing/test-runner-hooks.md) - Pre/post visit hooks
+- [Test Runner Filtering](/storybook/testing/test-runner-filtering.md) - Ignoring stories
+- [Running Tests Development](/storybook/testing/running-tests-development.md) - Executing tests
+- [CI Optimization](/storybook/testing/ci-cd-optimization.md) - Performance tuning

@@ -70,6 +70,6 @@ async function apiRequest(url) {
 ```
 
 ## Related Notes
-- [JSDoc Type Definitions](./typedef.md)
-- [JSDoc Basic Annotations](./basic-annotations.md)
-- [JavaScript with JSDoc Principle](../../principles/javascript-with-jsdoc.md)
+- [JSDoc Type Definitions](/naming/jsdoc/typedef.md)
+- [JSDoc Basic Annotations](/naming/jsdoc/basic-annotations.md)
+- [JavaScript with JSDoc Principle](/principles/javascript-with-jsdoc.md)

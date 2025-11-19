@@ -68,6 +68,6 @@ Use conventional prefixes for clarity:
 ```
 
 ## Related Notes
-- [Pull Request Guidelines](./pull-request-guidelines.md)
-- [Commit Message Format](./commit-format.md)
-- [Code Style Standards](../naming/variables-snake-case.md)
+- [Pull Request Guidelines](/git-workflow/pull-request-guidelines.md)
+- [Commit Message Format](/git-workflow/commit-format.md)
+- [Code Style Standards](/naming/variables-snake-case.md)

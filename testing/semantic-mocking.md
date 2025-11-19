@@ -93,6 +93,6 @@ mockFetch.mockImplementation(({ method, url }) => {
 - Database query mocking
 
 ## Related Notes
-- [Jest Mocking Patterns](./jest-mocking-patterns.md)
-- [Mock External Dependencies](./mock-external-dependencies.md)
-- [Test Independence](./test-independence.md)
+- [Jest Mocking Patterns](/testing/jest-mocking-patterns.md)
+- [Mock External Dependencies](/testing/mock-external-dependencies.md)
+- [Test Independence](/testing/test-independence.md)

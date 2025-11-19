@@ -45,6 +45,6 @@ function useWindowSize() {
 ```
 
 ## Related Notes
-- [Custom Hooks Pattern](../architecture/components/custom-hooks.md)
-- [Functions: camelCase](./functions-camelcase.md)
-- [Components: PascalCase](./components-pascalcase.md)
+- [Custom Hooks Pattern](/architecture/components/custom-hooks.md)
+- [Functions: camelCase](/naming/functions-camelcase.md)
+- [Components: PascalCase](/naming/components-pascalcase.md)

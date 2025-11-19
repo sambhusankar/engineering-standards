@@ -76,6 +76,6 @@ describe('UserService', () => {
 - **Maintainability**: Can modify/delete tests without affecting others
 
 ## Related Notes
-- [Setup and Teardown](./setup-teardown.md)
-- [AAA Pattern](./aaa-pattern.md)
-- [Mock External Dependencies](./mock-external-dependencies.md)
+- [Setup and Teardown](/testing/setup-teardown.md)
+- [AAA Pattern](/testing/aaa-pattern.md)
+- [Mock External Dependencies](/testing/mock-external-dependencies.md)

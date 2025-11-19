@@ -172,8 +172,8 @@ When creating new atomic notes, follow this structure:
 [More details if needed, but keep focused]
 
 ## Related Notes
-- [Link to related concept 1](./related-note.md)
-- [Link to related concept 2](../other-dir/note.md)
+- [Link to related concept 1](/directory/related-note.md)
+- [Link to related concept 2](/other-dir/note.md)
 ```
 
 Keep notes:
@@ -184,14 +184,19 @@ Keep notes:
 
 ## Cross-Directory Links
 
-When linking between directories, use relative paths:
+Use repo-root relative paths (starts with `/`):
 
 ```markdown
 # From naming/components-pascalcase.md
 See also:
-- [Custom Hooks Pattern](../architecture/custom-hooks.md)
-- [Component Files](./files-components.md)
+- [Custom Hooks Pattern](/architecture/components/custom-hooks.md)
+- [Component Files](/naming/files-components.md)
 ```
+
+**Benefits**:
+- Links remain valid when reorganizing files into different directories
+- Works everywhere: GitHub web preview, local editors, IDEs, LLM consumption
+- Clear absolute reference from repo root
 
 ## For Consuming Projects
 

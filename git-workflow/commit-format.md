@@ -65,5 +65,5 @@ Fixes #123"
 - Should build and pass tests
 
 ## Related Notes
-- [Branch Naming](./branch-naming.md)
-- [Pull Request Guidelines](./pull-request-guidelines.md)
+- [Branch Naming](/git-workflow/branch-naming.md)
+- [Pull Request Guidelines](/git-workflow/pull-request-guidelines.md)

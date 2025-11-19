@@ -520,13 +520,13 @@ When reviewing AI chatbot code, verify:
 
 All patterns documented in `/architecture/ai/`:
 
-1. **[ai-tool-definition-pattern.md](./architecture/ai/ai-tool-definition-pattern.md)** - Creating tools
-2. **[ai-sdk-server-streaming.md](./architecture/ai/ai-sdk-server-streaming.md)** - Server integration
-3. **[ai-sdk-client-hooks.md](./architecture/ai/ai-sdk-client-hooks.md)** - Client integration
-4. **[message-format-normalization.md](./architecture/ai/message-format-normalization.md)** - Message handling
-5. **[tool-call-structure.md](./architecture/ai/tool-call-structure.md)** - Tool execution
-6. **[system-prompt-generation.md](./architecture/ai/system-prompt-generation.md)** - Prompt patterns
-7. **[event-tracking-analytics.md](./architecture/ai/event-tracking-analytics.md)** - Observability
+1. **[ai-tool-definition-pattern.md](/architecture/ai/ai-tool-definition-pattern.md)** - Creating tools
+2. **[ai-sdk-server-streaming.md](/architecture/ai/ai-sdk-server-streaming.md)** - Server integration
+3. **[ai-sdk-client-hooks.md](/architecture/ai/ai-sdk-client-hooks.md)** - Client integration
+4. **[message-format-normalization.md](/architecture/ai/message-format-normalization.md)** - Message handling
+5. **[tool-call-structure.md](/architecture/ai/tool-call-structure.md)** - Tool execution
+6. **[system-prompt-generation.md](/architecture/ai/system-prompt-generation.md)** - Prompt patterns
+7. **[event-tracking-analytics.md](/architecture/ai/event-tracking-analytics.md)** - Observability
 
 ---
 

@@ -138,7 +138,7 @@ describe('FileProcessor', () => {
 ```
 
 ## Related Notes
-- [Test Independence](./test-independence.md)
-- [Mock Cleanup](./mock-cleanup.md)
-- [AAA Pattern](./aaa-pattern.md)
-- [Unit vs Integration Tests](./unit-vs-integration.md)
+- [Test Independence](/testing/test-independence.md)
+- [Mock Cleanup](/testing/mock-cleanup.md)
+- [AAA Pattern](/testing/aaa-pattern.md)
+- [Unit vs Integration Tests](/testing/unit-vs-integration.md)
