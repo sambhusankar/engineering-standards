@@ -14,6 +14,58 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Removed
 
+## [1.2.0] - 2025-11-19
+
+### Added
+- **Storybook Standards Directory** (`storybook/` - 18 atomic notes with emergent subfolder structure):
+  - Created dedicated `storybook/` directory (separate from `testing/`)
+  - **Core Story Files** (7 notes):
+    - `meta-structure.md` - Standard meta object format and conventions
+    - `story-naming.md` - User journey naming patterns (AfterAction, BeforeState, etc.)
+    - `argtypes-standards.md` - ArgTypes documentation with comprehensive vs minimal approach
+    - `decorators.md` - Layout constraints and context provider patterns
+    - `storybook-interactions.md` - Detailed interaction patterns (moved from testing/)
+    - `storybook-mock-data.md` - Centralized mocks and action proxies (moved from testing/)
+    - `storybook-user-journey-pattern.md` - Complete user journey methodology (moved from testing/)
+  - **documentation/** subfolder (5 notes):
+    - `documentation.md` - Multi-layer documentation strategy overview
+    - `file-header-pattern.md` - JSDoc headers for story files
+    - `custom-description-banner.md` - Custom `parameters.description` pattern for in-canvas story context
+    - `mdx-component-docs.md` - Component-level documentation with MDX (replaces autodocs)
+    - `auto-extract-description-from-jsdoc.md` - Future enhancement exploration
+  - **play-functions/** subfolder (6 notes):
+    - `play-functions.md` - Overview and basic structure
+    - `play-functions-when-to-use.md` - Decision guidelines for interactive vs data display components
+    - `play-functions-auto-open-pattern.md` - Auto-opening collapsed UI for visual review
+    - `play-functions-portaled-components.md` - Handling components that render outside canvas
+    - `play-functions-waiting-strategies.md` - Async waiting patterns for animations and transitions
+    - `play-functions-assertions.md` - Testing and query patterns
+  - `index.md` - Complete Storybook standards overview with subfolder navigation
+- **Emergent Subfolder Pattern Documentation**:
+  - Updated `principles/atomic-knowledge-base.md` with "When to Create Subfolders" guidance
+  - Documents emergent structure principle: let subfolders emerge from atomization, not dictate it
+  - Examples: `storybook/play-functions/` and `storybook/documentation/` emerged after splitting large notes
+
+### Changed
+- **Storybook Standards Atomization**:
+  - Split `documentation.md` (298 lines) → 5 focused notes (documentation/ subfolder)
+  - Split `play-functions.md` (329 lines) → 6 focused pattern notes (play-functions/ subfolder)
+  - Atomized large notes following MECE principle (mutually exclusive, collectively exhaustive)
+  - Updated all cross-references across 18 notes to reflect new subfolder structure
+  - Simplified `index.md` to pure navigation with subfolder links
+  - Total Storybook notes: 3 → 18 atomic notes (with emergent subfolder organization)
+- **Storybook Pattern Clarifications**:
+  - Standardized patterns from txn.fobrix.com codebase analysis
+  - Resolved conflicts: title casing (match folder structure), meta export style, argTypes coverage
+  - **Clarified**: We do NOT use Storybook's autodocs feature
+  - Story object convention: **parameters before args**
+  - Documented custom `parameters.description` banner pattern (not standard Storybook)
+  - Documented MDX for component-level docs (replaces autodocs)
+  - Removed all `parameters.docs.description.*` references (autodocs not used)
+- **Testing Directory Updates**:
+  - Updated `testing/index.md` to reference new `storybook/` directory
+  - Moved 3 Storybook-specific notes from `testing/` to `storybook/`
+
 ## [1.1.0] - 2025-11-18
 
 ### Added

@@ -39,9 +39,7 @@ Atomic notes on testing patterns organized by testing layer: Unit, Component, an
 ## Component Testing with Storybook
 
 - [Testing React Components](./testing-react-components.md) - Storybook overview
-- [Storybook User Journey Pattern](./storybook-user-journey-pattern.md) - Stories as user scenarios
-- [Storybook Interactions](./storybook-interactions.md) - Play functions and assertions
-- [Storybook Mock Data](./storybook-mock-data.md) - Centralized mocks and Proxy pattern
+- **[Storybook Standards](../storybook/index.md)** - Complete Storybook patterns and conventions
 
 ## End-to-End Testing with Playwright
 

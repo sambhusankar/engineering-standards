@@ -209,5 +209,7 @@ export default {
 - Testing unusual values
 
 ## Related Notes
-- [Storybook User Journey Pattern](./storybook-user-journey-pattern.md)
-- [Storybook Interactions](./storybook-interactions.md)
+- [Decorators](./decorators.md) - Layout and context providers
+- [Storybook Interactions](./storybook-interactions.md) - Interaction patterns
+- [Play Functions](./play-functions/play-functions.md) - Automated interactions overview
+- [Meta Structure](./meta-structure.md) - Story file configuration

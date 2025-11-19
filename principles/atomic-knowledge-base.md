@@ -45,6 +45,26 @@ The knowledge base structure emerges naturally from the atomic notes and their c
 - Navigate knowledge graph through related topics
 - Add new notes without disrupting existing structure
 
+#### When to Create Subfolders
+
+Subfolders are welcome when they **emerge naturally** from the atomization process:
+
+**Create subfolders when**:
+- A topic generates 8+ atomic notes with clear grouping (e.g., `play-functions/` with 6 pattern notes)
+- Related notes share a common prefix (e.g., `play-functions-*.md` → `play-functions/*.md`)
+- The grouping becomes obvious after atomization, not before
+
+**Examples of emergent subfolders**:
+- `storybook/play-functions/` - emerged after splitting play-functions.md into 6 atomic pattern notes
+- `storybook/documentation/` - emerged after splitting documentation.md into 5 layer-specific notes
+
+**Don't create subfolders**:
+- Prematurely before writing atomic notes
+- For rigid categorization schemes
+- When notes would be isolated from broader context
+
+The key principle: **let subfolders emerge from atomization, not dictate it**.
+
 ## Benefits for LLM Consumption
 
 ### Overcome Information Overload
