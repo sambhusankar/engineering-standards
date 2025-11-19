@@ -32,36 +32,32 @@ Traditional comprehensive documentation is inefficient for LLM tools. This knowl
 ✅ **Easy Discovery** - Find exactly what you need via search or index
 ✅ **Emergent Organization** - Knowledge graph emerges from inter-note links
 
-**Read more**: [principles/atomic-knowledge-base.md](./principles/atomic-knowledge-base.md)
+**Read more**: `principles/documentation/` directory
 
 ## Repository Structure
 
 ```
 /
 ├── principles/         # Knowledge base principles
-│   └── atomic-knowledge-base.md
+│   └── documentation/  # Atomic knowledge base approach
 ├── naming/            # Naming conventions (11 notes)
-│   ├── index.md
 │   ├── variables-snake-case.md
 │   ├── components-pascalcase.md
-│   └── ... (8 more)
+│   └── ... (9 more)
 ├── testing/           # Testing practices (9 notes)
-│   ├── index.md
 │   ├── aaa-pattern.md
 │   ├── coverage-requirements.md
-│   └── ... (6 more)
+│   └── ... (7 more)
 ├── architecture/      # Architecture patterns (20 notes)
-│   ├── index.md
 │   ├── database/      # Database patterns (11 notes)
 │   ├── components/    # Component patterns
 │   ├── state/         # State management
 │   ├── modules/       # Module organization
 │   └── functional/    # Functional programming
 ├── git-workflow/      # Git & development workflow (7 notes)
-│   ├── index.md
 │   ├── branch-naming.md
 │   ├── commit-format.md
-│   └── ... (4 more)
+│   └── ... (5 more)
 ├── examples/          # Complex code examples (future)
 └── templates/         # Project templates
     └── CLAUDE.md.template
@@ -72,7 +68,7 @@ Traditional comprehensive documentation is inefficient for LLM tools. This knowl
 ### For Humans
 
 Browse by topic:
-1. Start with a topic `index.md` file (e.g., `naming/index.md`)
+1. List files in topic directory (e.g., `ls naming/`)
 2. Click through to specific notes of interest
 3. Follow "Related Notes" links to discover connections
 
@@ -90,7 +86,7 @@ grep -r "snake_case" --include="*.md"
 cat naming/variables-snake-case.md
 ```
 
-**Best practice**: Start with topic index, identify relevant notes, load only what's needed.
+**Best practice**: List files in topic directory, identify relevant notes from filenames, load only what's needed.
 
 ## Common Use Cases
 
@@ -100,19 +96,19 @@ cat naming/variables-snake-case.md
 3. If using hooks: `naming/hooks-use-prefix.md`
 
 ### Writing Tests
-1. Start at `testing/index.md`
+1. List files: `ls testing/`
 2. Read `testing/aaa-pattern.md` for structure
 3. Read `testing/coverage-requirements.md` for targets
 4. Read `testing/testing-react-components.md` for React
 
 ### Setting Up Git Workflow
-1. Start at `git-workflow/index.md`
+1. List files: `ls git-workflow/`
 2. Read `git-workflow/branch-naming.md`
 3. Read `git-workflow/commit-format.md`
 4. Read `git-workflow/pull-request-guidelines.md`
 
 ### Designing Component Architecture
-1. Start at `architecture/index.md`
+1. List files: `ls architecture/`
 2. Read `architecture/container-presentational-pattern.md`
 3. Read `architecture/component-composition.md`
 4. Follow links to state management patterns
@@ -123,7 +119,7 @@ This knowledge base is optimized for LLM consumption:
 
 - **Load selectively**: Only fetch notes relevant to current task
 - **Follow links**: Navigate through related concepts as needed
-- **Index first**: Check `index.md` files for overview
+- **List files first**: Use `ls` or glob patterns to see available notes
 - **Stay focused**: Each note addresses one concept
 
 See [CLAUDE.md](./CLAUDE.md) for detailed usage guidance.
@@ -147,8 +143,7 @@ See [templates/CLAUDE.md.template](./templates/CLAUDE.md.template) for how to in
    - Clear title describing single concept
    - Code example(s)
    - Links to 2-5 related notes
-3. Update directory `index.md`
-4. Add cross-references from related notes
+3. Add cross-references from related notes
 
 ### Updating Notes
 
@@ -163,7 +158,6 @@ If a note exceeds ~60 lines:
 1. Identify sub-concepts
 2. Split into multiple atomic notes
 3. Update original note with links
-4. Update index
 
 ## Atomic Note Structure
 
@@ -196,7 +190,7 @@ See [CHANGELOG.md](./CHANGELOG.md) for version history and major changes.
 ## Questions?
 
 - **For LLM usage**: See [CLAUDE.md](./CLAUDE.md)
-- **For atomic principles**: See [principles/atomic-knowledge-base.md](./principles/atomic-knowledge-base.md)
+- **For atomic principles**: See `principles/documentation/` directory
 - **For specific standards**: Browse topic directories
 
 ---

@@ -47,7 +47,7 @@ Each note follows the atomic knowledge base approach:
 3. **Links Over Hierarchy** - Notes connect through links
 4. **Emergent Structure** - Organization emerges from connections
 
-**Read**: [principles/atomic-knowledge-base.md](./principles/atomic-knowledge-base.md) for full details.
+**Read**: `principles/documentation/` for full details on atomic knowledge base approach.
 
 ## How to Use This Knowledge Base
 
@@ -55,10 +55,9 @@ Each note follows the atomic knowledge base approach:
 
 When building or maintaining code:
 
-1. **Search by topic**: Look in relevant directory (e.g., `naming/`, `testing/`)
-2. **Check index first**: Each directory has `index.md` with overview
-3. **Load specific notes**: Fetch only the atomic notes needed for the task
-4. **Follow links**: Related notes are cross-linked
+1. **Search by topic**: List files in relevant directory (e.g., `ls naming/`, `ls testing/`)
+2. **Load specific notes**: Fetch only the atomic notes needed for the task
+3. **Follow links**: Related notes are cross-linked
 
 **Example**: For naming a new React component:
 - Read: `naming/components-pascalcase.md`
@@ -85,14 +84,10 @@ grep -r "React" --include="*.md"
 grep -r "async" --include="*.md"
 ```
 
-**By index browsing**:
-- Start with `naming/index.md`, `testing/index.md`, etc.
-- Index files list all notes in that topic
-
 ## Common Use Cases
 
 ### Naming a Variable
-1. Check `naming/index.md`
+1. List files: `ls naming/`
 2. Read `naming/variables-snake-case.md`
    - Note: React hook returns use camelCase (exception)
    - Regular variables use snake_case
@@ -100,19 +95,19 @@ grep -r "async" --include="*.md"
 4. If constant, read `naming/constants-screaming-snake.md`
 
 ### Writing Tests
-1. Check `testing/index.md`
+1. List files: `ls testing/`
 2. Read `testing/aaa-pattern.md` for structure
 3. Read `testing/test-naming.md` for naming
 4. Read `testing/coverage-requirements.md` for targets
 
 ### Designing Components
-1. Check `architecture/index.md`
+1. List files: `ls architecture/`
 2. Read `architecture/container-presentational-pattern.md`
 3. Read `architecture/component-composition.md`
 4. Follow links to related patterns
 
 ### Setting Up Git Workflow
-1. Check `git-workflow/index.md`
+1. List files: `ls git-workflow/`
 2. Read `git-workflow/branch-naming.md`
 3. Read `git-workflow/commit-format.md`
 4. Read `git-workflow/pull-request-guidelines.md`
@@ -127,8 +122,7 @@ grep -r "async" --include="*.md"
    - Concise explanation (20-50 lines typical)
    - Code example(s)
    - Links to related notes
-3. Update directory `index.md` to include new note
-4. Add cross-references from related notes
+3. Add cross-references from related notes
 
 ### Updating an Existing Note
 
@@ -145,7 +139,6 @@ If a note exceeds ~60 lines, consider splitting:
 1. Identify sub-concepts within the note
 2. Create separate notes for each sub-concept
 3. Update original note to link to new notes
-4. Update index
 
 **Example**: If `testing/react-components.md` gets large:
 - Split into: `testing/react-queries.md`, `testing/react-events.md`, `testing/react-async.md`
@@ -213,8 +206,8 @@ See `templates/CLAUDE.md.template` for how projects should reference this knowle
 ## Discovery Patterns
 
 **LLMs should**:
-1. Start with topic index (e.g., `naming/index.md`)
-2. Identify relevant notes from index
+1. List files in relevant directory (e.g., `ls naming/` or glob pattern `naming/*.md`)
+2. Identify relevant notes from filenames (titles are descriptive)
 3. Load only the needed atomic notes
 4. Follow cross-reference links as needed
 
@@ -232,7 +225,6 @@ When creating or editing notes, ensure:
 - [ ] Length appropriate (20-50 lines typical)
 - [ ] Includes practical code example
 - [ ] Links to 2-5 related notes
-- [ ] Listed in directory `index.md`
 - [ ] Cross-referenced from related notes
 
 ---
