@@ -4,20 +4,13 @@ Complete reference catalog of all control types available in Storybook argTypes.
 
 ## Text Input
 
-For string props:
-
 ```javascript
 argTypes: {
-  file_name: {
-    control: 'text',
-    description: 'Name of the uploaded file',
-  },
+  file_name: { control: 'text', description: 'Name of the uploaded file' },
 }
 ```
 
 ## Select Dropdown
-
-For props with predefined options:
 
 ```javascript
 argTypes: {
@@ -29,19 +22,7 @@ argTypes: {
 }
 ```
 
-**Alternative syntax**:
-```javascript
-argTypes: {
-  variant: {
-    control: { type: 'select', options: ['plain', 'outlined', 'soft', 'solid'] },
-    description: 'Visual style variant',
-  },
-}
-```
-
 ## Radio Buttons
-
-Similar to select but with radio UI:
 
 ```javascript
 argTypes: {
@@ -55,43 +36,24 @@ argTypes: {
 
 ## Boolean Checkbox
 
-For boolean props:
-
 ```javascript
 argTypes: {
-  show_icon: {
-    control: 'boolean',
-    description: 'Whether to display the alert icon',
-  },
+  show_icon: { control: 'boolean', description: 'Whether to display icon' },
 }
 ```
 
 ## Number Spinner
 
-For numeric props:
-
 ```javascript
 argTypes: {
   page_count: {
-    control: 'number',
+    control: { type: 'number', min: 1, max: 100 },
     description: 'Total number of pages',
   },
 }
 ```
 
-**With range constraints**:
-```javascript
-argTypes: {
-  page_count: {
-    control: { type: 'number', min: 1, max: 100 },
-    description: 'Total number of pages (1-100)',
-  },
-}
-```
-
 ## Range Slider
-
-For numeric props better controlled with a slider:
 
 ```javascript
 argTypes: {
@@ -104,40 +66,25 @@ argTypes: {
 
 ## Object Editor
 
-For complex object or array props:
-
 ```javascript
 argTypes: {
-  data: {
-    control: 'object',
-    description: 'Array of data objects to display',
-  },
+  data: { control: 'object', description: 'Array of data objects to display' },
 }
 ```
 
 ## Color Picker
 
-For color props:
-
 ```javascript
 argTypes: {
-  background_color: {
-    control: 'color',
-    description: 'Background color of the component',
-  },
+  background_color: { control: 'color', description: 'Background color' },
 }
 ```
 
 ## Date Picker
 
-For date props:
-
 ```javascript
 argTypes: {
-  start_date: {
-    control: 'date',
-    description: 'Start date for the range',
-  },
+  start_date: { control: 'date', description: 'Start date for the range' },
 }
 ```
 
@@ -145,20 +92,6 @@ argTypes: {
 
 Document default values in the controls panel:
 
-```javascript
-argTypes: {
-  size: {
-    control: 'select',
-    options: ['sm', 'md', 'lg'],
-    description: 'Size of the component',
-    table: {
-      defaultValue: { summary: 'md' },
-    },
-  },
-}
-```
-
-**With type information**:
 ```javascript
 argTypes: {
   size: {
@@ -175,50 +108,34 @@ argTypes: {
 
 ## Action Callbacks
 
-For event handler props, use `action` and `fn()`:
+For event handler props:
 
 ```javascript
-import { fn } from '@storybook/test';
+import { fn } from 'storybook/test';
 
 const meta = {
   argTypes: {
-    on_close: {
-      action: 'closed',
-      description: 'Callback when dialog is closed',
-    },
-    on_confirm: {
-      action: 'confirmed',
-      description: 'Callback when export is confirmed',
-    },
+    on_close: { action: 'closed', description: 'Callback when closed' },
   },
   args: {
     on_close: fn(),
-    on_confirm: fn(),
   },
 };
 ```
 
-**Key details**:
-- `action` in argTypes defines the action label in the Actions panel
-- `fn()` in args creates a spy function that logs to the Actions panel
-- Both must be present for event handlers
-
-**Example**: src/components/ExportConfirmDialog.stories.js:61-77
+Both `action` in argTypes and `fn()` in args must be present for event handlers.
 
 ## Disabling Controls
 
-To hide a control while keeping the prop documented:
+Hide a control while keeping the prop documented:
 
 ```javascript
 argTypes: {
-  children: {
-    control: false,
-    description: 'Child components to render',
-  },
+  children: { control: false, description: 'Child components to render' },
 }
 ```
 
 ## Related Notes
-- [ArgTypes Basics](/storybook/argtypes/basics.md) - When to use argTypes and structure
-- [ArgTypes Examples](/storybook/argtypes/examples.md) - Real component examples
-- [Action Mocking Pattern](/storybook/mocking/actions.md) - Server action patterns
+- [ArgTypes Basics](/storybook/argtypes/basics.md)
+- [ArgTypes Examples](/storybook/argtypes/examples.md)
+- [Action Mocking Pattern](/storybook/mocking/actions.md)

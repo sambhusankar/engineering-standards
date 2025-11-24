@@ -8,7 +8,7 @@ Consistent file structure order for Storybook story files.
 // 1. Imports
 import ComponentName from './ComponentName';
 import { OtherComponent } from '@mui/joy';
-import { within, userEvent, expect } from '@storybook/test';
+import { within, userEvent, expect } from 'storybook/test';
 
 // 2. Sample/Mock Data (if needed)
 const sample_transactions = [

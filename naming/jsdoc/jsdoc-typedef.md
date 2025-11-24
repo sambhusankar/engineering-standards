@@ -47,25 +47,9 @@ async function fetchData(url) {
 }
 ```
 
-## Inline Object Types
-
-For simple cases, define types inline:
-
-```javascript
-/**
- * @param {{
- *   name: string,
- *   email: string,
- *   age?: number,
- *   roles: string[]
- * }} userData
- */
-function validateUser(userData) {
-  // Validation logic
-}
-```
-
 ## Related Notes
+- [JSDoc Inline Types vs @typedef](/naming/jsdoc/jsdoc-inline-vs-typedef.md)
+- [JSDoc Centralized Types](/naming/jsdoc/jsdoc-centralized-types.md)
 - [JSDoc Basic Annotations](/naming/jsdoc/basic-annotations.md)
 - [JSDoc Generic Types](/naming/jsdoc/generics.md)
 - [JSDoc Importing Types](/naming/jsdoc/imports.md)
