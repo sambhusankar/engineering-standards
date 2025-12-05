@@ -7,7 +7,9 @@
       "Read(//Users/alex/ec2code/cashflowy/txn.fobrix.com/**)",
       "Read(//Users/alex/ec2code/vimana/svc/elevate-ai/**)",
       "Bash(cat:*)",
-      "Bash(git rm:*)"
+      "Bash(git rm:*)",
+      "Bash(git add:*)",
+      "Bash(rm:*)"
     ],
     "deny": [],
     "ask": []

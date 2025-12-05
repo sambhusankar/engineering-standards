@@ -1,199 +1,64 @@
 # AI Tool Definition Pattern
 
-Define AI tools as generator functions that return tool objects with Zod schemas and execution logic.
+Define AI tools as generator functions that return tool objects with Zod schemas.
 
-## Pattern Overview
-
-Tools make AI models capable of interacting with external systems. Use a generator function pattern to create tools with contextual parameters (cookieStore, context_id, etc.).
-
-## Tool Definition Structure
+## Pattern
 
 ```javascript
+import "server-only";
 import { tool } from "ai";
 import { z } from 'zod';
 
-/**
- * Generator function returns a tool instance
- * This pattern allows tools to capture context (cookieStore, context_id) in closure
- * @param {Object} params
- * @param {Object} params.cookieStore - Authentication cookies from Next.js
- * @param {string} params.context_id - Context/scope identifier
- * @returns {Object} Tool definition for AI SDK
- */
 export function generateGetMetrics({ cookieStore, context_id }) {
-  const getMetrics = tool({
+  return tool({
     description: `Get metrics for resources.
-    Time period is inclusive of start and exclusive of end.
-    Timestamps should be ISO 8601 format with timezone (e.g., 2024-07-17T08:00:00+05:30).`,
+    Timestamps should be ISO 8601 format with timezone.`,
 
-    // Zod schema defines expected parameters
     inputSchema: z.object({
-      metric: z.enum(['metric_a', 'metric_b', 'metric_c']),
+      metric: z.enum(['metric_a', 'metric_b']),
       start: z.string().datetime({ offset: true }),
       end: z.string().datetime({ offset: true }),
       resource_ids: z.array(z.string()).optional(),
     }),
 
-    // Execute function runs when AI calls this tool
-    execute: async ({ metric, start, end, resource_ids }) => {
-      // Access captured context from closure
+    execute: async (input) => {
+      const { metric, start, end, resource_ids } = input;
       const data = await dataSVC.getMetrics({
         cookieStore,
         context: context_id,
-        start,
-        end,
+        start, end,
         resources: resource_ids,
-        metrics: [metric],
       });
-
-      return {
-        metric,
-        units: getMetricUnit(metric),
-        result: data,
-      };
+      return { metric, result: data };
     },
   });
-
-  return getMetrics;
 }
 ```
 
 ## Key Design Decisions
 
-1. **Generator Pattern**: Functions that return tool definitions, not tools directly
-   - Allows capturing context (authentication, IDs) in closure
-   - Each request gets fresh tool instances with correct context
-   - Clean separation between tool factory and tool instance
+1. **Generator Pattern**: Functions return tool definitions, capturing context in closure
+2. **Zod Schema**: Validates parameters before execution
+3. **`input` Parameter**: Accept as single object, destructure inside (see [Input Pattern](/architecture/ai/ai-tool-input-pattern.md))
 
-2. **Zod Schema Validation**: Required for all tool parameters
-   - AI SDK validates parameters before execution
-   - Provides clear type contracts to the AI model
-   - Enables proper error handling
-
-3. **Async Execution**: Tools typically call backend services
-   - Use async/await for clarity
-   - Catch errors and return structured responses
-   - Consider data transformation (units, formatting)
-
-## Tool Registration Pattern
+## Tool Registration
 
 ```javascript
-// In chat API route
 const tools = {
   getMetrics: generateGetMetrics({ cookieStore, context_id }),
   getTimeline: generateGetTimeline({ cookieStore, context_id }),
-  getNotifications: generateGetNotifications({ cookieStore, context_id }),
-  // ... more tools
 };
 
-// Pass to AI SDK
 const result = streamText({
   model: openai("gpt-4.1"),
-  system: systemPrompt,
-  messages: validatedMessages,
-  tools: tools,
-  // ... other options
+  tools,
 });
 ```
 
-## Complex Data Retrieval Pattern
-
-For tools that need orchestrated calls, use `async.auto()` for dependency management:
-
-```javascript
-export function generateGetTimeline({ cookieStore, context_id }) {
-  const getTimeline = tool({
-    // ... description and schema ...
-    execute: async ({ resource_id, type, start, end }) => {
-      const workflow = {
-        // Fetch context metadata
-        getContext: async () => {
-          const db = getDB();
-          return db.Contexts.findOne({ where: { id: context_id } });
-        },
-
-        // Fetch resource list
-        getResources: async () => {
-          return dataSVC.getResources({ cookieStore, context: context_id });
-        },
-
-        // Fetch main data, depends on context/resources
-        getTimeline: async () => {
-          return dataSVC.getTimeline({
-            cookieStore,
-            context: context_id,
-            start, end,
-            timelines: [type],
-            ...(resource_id && { resources: [resource_id] }),
-          });
-        },
-
-        // Process results using async.auto dependency graph
-        processResults: async (results) => {
-          // Has access to results.getContext, results.getResources, results.getTimeline
-          return formatTimelineData(results.getTimeline, results.getResources);
-        },
-      };
-
-      const results = await async.auto(workflow);
-      return results.processResults;
-    },
-  });
-
-  return getTimeline;
-}
-```
-
-## Error Handling
-
-```javascript
-export function generateGetNotifications({ cookieStore, context_id }) {
-  const getNotifications = tool({
-    description: "Get notifications for resources",
-    inputSchema: z.object({
-      resource_id: z.string(),
-      start: z.string().datetime({ offset: true }),
-      end: z.string().datetime({ offset: true }),
-    }),
-    execute: async ({ resource_id, start, end }) => {
-      try {
-        const notifications = await dataSVC.getNotifications({
-          cookieStore,
-          context: context_id,
-          resource: resource_id,
-          start, end,
-        });
-
-        return {
-          resource_id,
-          notification_count: notifications.length,
-          notifications,
-        };
-      } catch (error) {
-        console.error('Error fetching notifications:', error);
-        // Return graceful error response instead of throwing
-        return {
-          resource_id,
-          error: error.message,
-          notifications: [],
-        };
-      }
-    },
-  });
-
-  return getNotifications;
-}
-```
-
-## Benefits of This Pattern
-
-- **Context Capture**: Tools have access to cookies, IDs, and request context
-- **Reusability**: Same tool definition used across multiple chat instances
-- **Testability**: Tools can be instantiated with mock data
-- **Dependency Management**: Use async.auto() for complex workflows
-- **Type Safety**: Zod schemas provide runtime validation and IDE autocomplete
-
 ## Related Notes
-- [Tool Call Structure](/architecture/ai/tool-call-structure.md) - Handling tool invocation responses
-- [AI SDK Server Integration](/architecture/ai/ai-sdk-server-streaming.md) - Using tools in streaming
-- [Tool Generator Functions](/architecture/ai/tool-generator-functions.md) - Detailed generator pattern
+- [AI Tool Server-Only](/architecture/ai/ai-tool-server-only.md)
+- [AI Tool Error Handling](/architecture/ai/ai-tool-error-handling.md)
+- [AI Tool Input Pattern](/architecture/ai/ai-tool-input-pattern.md)
+- [AI Tool Service Abstraction](/architecture/ai/ai-tool-service-abstraction.md)
+- [AI Tool File Organization](/architecture/ai/ai-tool-file-organization.md)
+- [AI Tool Testing](/architecture/ai/ai-tool-testing.md)

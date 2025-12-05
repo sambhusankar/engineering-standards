@@ -39,11 +39,29 @@ Document function type parameters:
 - Higher-order functions
 - Event handlers
 
-### [Importing Types](/naming/jsdoc/imports.md)
+### [Importing Types](/naming/jsdoc/jsdoc-imports.md)
 Reuse types from other files:
 - Type imports with @typedef
 - Importing from node modules
 - Optional type checking with @ts-check
+
+### [Gradual Type Checking](/naming/jsdoc/jsdoc-gradual-typecheck.md)
+Configure jsconfig.json for opt-in type checking:
+- `checkJs: false` with `@ts-check` per file
+- NPM typecheck scripts
+- Adoption strategy
+
+### [Discriminated Unions](/naming/jsdoc/jsdoc-discriminated-unions.md)
+Handle arrays with multiple object shapes:
+- Literal string discriminators
+- Union types with `|`
+- Type annotations for containers
+
+### [API Type Prefixes](/naming/jsdoc/jsdoc-api-type-prefixes.md)
+Naming convention for external API types:
+- `SVC` prefix for service API types
+- Distinguishing API vs database types
+- Directory organization
 
 ## Quick Example
 

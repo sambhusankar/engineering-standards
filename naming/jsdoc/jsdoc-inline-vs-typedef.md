@@ -1,76 +1,61 @@
 # JSDoc: Inline Types vs @typedef
 
-Use inline object types for single-use props; use @typedef for types shared within a file or directory.
+Prefer inline types. Use @typedef only when a type is reused 3+ times or needs documentation.
 
-## When to Use Inline Types
+## Prefer Inline Types
 
-For component props used only once:
-
-```javascript
-/**
- * Floating chat bubble button that toggles the AI assistant
- *
- * @param {Object} props
- * @param {() => void} props.onClick - Function called when clicked
- * @param {boolean} props.is_open - Whether the chat window is open
- * @returns {JSX.Element}
- */
-export default function ChatBubble({ onClick, is_open }) {
-  return <Button onClick={onClick}>...</Button>;
-}
-```
-
-**Benefits:**
-- Less code for single-use types
-- Everything in one place
-- No need to export/import types
-
-## When to Use @typedef
-
-For types shared across multiple files in same directory:
+When a type is used once, write it inline:
 
 ```javascript
-// ChatMessages.jsx
-/**
- * @typedef {Object} Message
- * @property {'user' | 'assistant'} role - Message sender role
- * @property {string} content - Message content
- */
-
 /**
  * @param {Object} props
- * @param {Message[]} props.messages - Array of chat messages
- * @returns {JSX.Element}
+ * @param {User} props.user - The user object
+ * @param {(User & { score: number })[]} props.rankedUsers - Users with scores
+ * @returns {React.JSX.Element}
  */
-export default function ChatMessages({ messages }) {
+function UserList({ user, rankedUsers }) {
   // Implementation
 }
 ```
 
-**Benefits:**
-- Reusable across multiple files
-- Consistent type definition
-- Self-documenting shared data structures
+## Avoid Unnecessary Named Typedefs
 
-## Decision Criteria
+Don't create a named typedef for single-use types:
 
-**Use inline when:**
-- Props are only used in one component
-- Type is specific to that component
-- You want minimal code overhead
+```javascript
+// BAD - unnecessary abstraction
+/** @typedef {User & { score: number }} RankedUser */
+/** @param {RankedUser[]} props.rankedUsers */
 
-**Use @typedef when:**
-- Same type appears 2-3 times within same file
-- Same type used across 2-5 files in same directory
-- Type is moderately complex and benefits from a name
+// GOOD - inline is clearer
+/** @param {(User & { score: number })[]} props.rankedUsers - Users with scores */
+```
 
-**Use centralized .types.js files when:**
-- Type represents a core domain model (database entities, API types)
-- Type is used across many files and directories
-- See [JSDoc Centralized Types](/naming/jsdoc/jsdoc-centralized-types.md)
+## When Named Typedefs Are Appropriate
+
+1. **Same type used 3+ times in the file**
+2. **Inline type becomes unreadable** (complex nested structures)
+3. **Type needs documentation** (domain concepts requiring explanation)
+
+```javascript
+/**
+ * Represents a machine state transition event from the SCADA system.
+ * @typedef {Object} StateTransition
+ * @property {string} machineId
+ * @property {'running'|'idle'|'fault'} fromState
+ * @property {'running'|'idle'|'fault'} toState
+ * @property {number} timestamp
+ */
+```
+
+## Decision Checklist
+
+Before creating a named typedef, ask:
+- Is this type used more than twice? If no → inline it
+- Is the inline version unreadable (>80 chars, nested)? If no → inline it
+- Does this type need documentation for domain understanding? If no → inline it
 
 ## Related Notes
-- [JSDoc Type Definitions](/naming/jsdoc/jsdoc-typedef.md)
 - [JSDoc Centralized Types](/naming/jsdoc/jsdoc-centralized-types.md)
+- [JSDoc Type Definitions](/naming/jsdoc/jsdoc-typedef.md)
 - [JSDoc Basic Annotations](/naming/jsdoc/jsdoc-basic-annotations.md)
-- [Avoid Unnecessary Abstractions](/principles/avoid-premature-abstraction.md)

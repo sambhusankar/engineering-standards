@@ -13,12 +13,22 @@ Pattern matching syntax for running tests on specific stories or components.
 - Full suite: ~60 seconds (100 stories)
 - Single component: ~5 seconds (5 stories)
 
-## Basic Pattern Syntax
+## Basic Syntax
+
+Patterns are passed as positional arguments after `--`:
+
+```bash
+npm run storybook:test -- <pattern>
+```
+
+The pattern is passed to Jest as a regex for matching test file paths.
+
+## Basic Pattern Examples
 
 ### Test by Component Name
 
 ```bash
-npx test-storybook --pattern="Button"
+npm run storybook:test -- Button
 ```
 
 Tests all files matching "Button":
@@ -29,7 +39,7 @@ Tests all files matching "Button":
 ### Test Specific File
 
 ```bash
-npx test-storybook --pattern="FileDropzone.stories"
+npm run storybook:test -- FileDropzone.stories
 ```
 
 Tests only `FileDropzone.stories.js` (all stories in that file).
@@ -37,7 +47,7 @@ Tests only `FileDropzone.stories.js` (all stories in that file).
 ### Test by Directory
 
 ```bash
-npx test-storybook --pattern="components/forms"
+npm run storybook:test -- components/forms
 ```
 
 Tests all story files in `components/forms/` directory.
@@ -45,10 +55,49 @@ Tests all story files in `components/forms/` directory.
 ### Test Multiple Components
 
 ```bash
-npx test-storybook --pattern="Button|Dialog|Modal"
+npm run storybook:test -- 'Button|Dialog|Modal'
 ```
 
 Uses regex `|` (OR) to test multiple components.
+
+## Escaping Special Characters
+
+### Square Brackets (Next.js Dynamic Routes)
+
+Square brackets in paths must be escaped because they are regex character classes.
+
+**Without escaping** (fails):
+```bash
+# [t_id] interpreted as character class matching t, _, i, or d
+npm run storybook:test -- 'src/app/[t_id]/[p_id]/devices'
+# Result: 0 matches
+```
+
+**With escaping** (works):
+```bash
+npm run storybook:test -- 'src/app/\[t_id\]/\[p_id\]/devices'
+# Result: matches all device stories
+```
+
+**Full path example**:
+```bash
+npm run storybook:test -- 'src/app/\[t_id\]/\[p_id\]/devices/_components/SideFilter'
+```
+
+### Other Special Characters
+
+Characters with regex meaning need escaping:
+
+| Character | Meaning | Escape |
+|-----------|---------|--------|
+| `[` `]` | Character class | `\[` `\]` |
+| `.` | Any character | `\.` |
+| `*` | Zero or more | `\*` |
+| `+` | One or more | `\+` |
+| `?` | Optional | `\?` |
+| `(` `)` | Group | `\(` `\)` |
+| `^` | Start anchor | `\^` |
+| `$` | End anchor | `\$` |
 
 ## Regex Patterns
 
@@ -58,7 +107,7 @@ Full regex syntax supported:
 
 ```bash
 # All components starting with "Export"
-npx test-storybook --pattern="^Export"
+npm run storybook:test -- '^Export'
 ```
 
 Matches: `ExportDialog`, `ExportButton`, etc.
@@ -67,7 +116,7 @@ Matches: `ExportDialog`, `ExportButton`, etc.
 
 ```bash
 # All Dialog components
-npx test-storybook --pattern="Dialog$"
+npm run storybook:test -- 'Dialog$'
 ```
 
 Matches: `ConfirmDialog`, `AlertDialog`, etc.
@@ -75,7 +124,7 @@ Matches: `ConfirmDialog`, `AlertDialog`, etc.
 ### Multiple Exact Matches
 
 ```bash
-npx test-storybook --pattern="(Button|Card|Table)"
+npm run storybook:test -- '(Button|Card|Table)'
 ```
 
 Matches only: `Button`, `Card`, `Table`
@@ -84,10 +133,10 @@ Matches only: `Button`, `Card`, `Table`
 
 ```bash
 # Only stories in ui directory
-npx test-storybook --pattern="ui/"
+npm run storybook:test -- 'ui/'
 
 # Only stories in components/forms
-npx test-storybook --pattern="components/forms/"
+npm run storybook:test -- 'components/forms/'
 ```
 
 ## Filtering Strategies
@@ -96,23 +145,23 @@ npx test-storybook --pattern="components/forms/"
 
 ```bash
 # Authentication components
-npx test-storybook --pattern="src/components/auth"
+npm run storybook:test -- 'src/components/auth'
 
 # Navigation components
-npx test-storybook --pattern="src/components/nav"
+npm run storybook:test -- 'src/components/nav'
 
 # Form components
-npx test-storybook --pattern="src/components/forms"
+npm run storybook:test -- 'src/components/forms'
 ```
 
 ### By Complexity
 
 ```bash
 # Simple presentational components
-npx test-storybook --pattern="src/components/ui"
+npm run storybook:test -- 'src/components/ui'
 
 # Complex container components
-npx test-storybook --pattern="src/components/containers"
+npm run storybook:test -- 'src/components/containers'
 ```
 
 ### Recent Changes
@@ -122,54 +171,62 @@ npx test-storybook --pattern="src/components/containers"
 git diff --name-only main | grep stories
 
 # Test those specific files
-npx test-storybook --pattern="FileDropzone|ExportDialog"
+npm run storybook:test -- 'FileDropzone|ExportDialog'
 ```
 
 **Automated**:
 ```bash
 # Get changed story files and test them
 changed_files=$(git diff --name-only main | grep stories | sed 's/.stories.js//' | xargs basename -a | paste -sd "|" -)
-npx test-storybook --pattern="$changed_files"
+npm run storybook:test -- "$changed_files"
 ```
 
 ## Case Sensitivity
 
-Patterns are **case-sensitive**:
+Patterns are **case-insensitive** by default (Jest adds `/i` flag):
 
 ```bash
-# These are different:
---pattern="button"     # Matches: button.stories.js
---pattern="Button"     # Matches: Button.stories.js
-
-# Won't match each other!
+# Both match Button.stories.js
+npm run storybook:test -- button
+npm run storybook:test -- Button
 ```
 
-**Tip**: Use exact component name case.
+**Tip**: Use exact component name case for clarity.
 
 ## Common Patterns
 
 ### One Component
 
 ```bash
-npx test-storybook --pattern="ComponentName"
+npm run storybook:test -- ComponentName
 ```
 
 ### All Forms
 
 ```bash
-npx test-storybook --pattern="forms/"
+npm run storybook:test -- 'forms/'
 ```
 
 ### All Dialogs and Modals
 
 ```bash
-npx test-storybook --pattern="Dialog|Modal"
+npm run storybook:test -- 'Dialog|Modal'
 ```
 
 ### All UI Components
 
 ```bash
-npx test-storybook --pattern="ui/"
+npm run storybook:test -- 'ui/'
+```
+
+### Next.js Dynamic Route Components
+
+```bash
+# Specific component in dynamic route
+npm run storybook:test -- 'src/app/\[t_id\]/\[p_id\]/devices/_components/DeviceCard'
+
+# All components in a dynamic route folder
+npm run storybook:test -- '\[t_id\]/\[p_id\]/devices'
 ```
 
 ## Limitations
@@ -189,7 +246,7 @@ npm run storybook:dev
 **Option 2**: Temporarily rename other files
 ```bash
 mv Button.stories.js Button.ignore.stories.js
-npx test-storybook
+npm run storybook:test
 mv Button.ignore.stories.js Button.stories.js
 ```
 
@@ -204,12 +261,12 @@ Not supported:
 
 **Workaround**: Use consistent naming conventions.
 
-## Combining Patterns
+## Combining with Other Options
 
 ### Pattern + Watch Mode
 
 ```bash
-npx test-storybook --pattern="Button" --watch
+npm run storybook:test -- Button --watch
 ```
 
 Re-runs tests when Button.stories.js changes.
@@ -217,19 +274,49 @@ Re-runs tests when Button.stories.js changes.
 ### Pattern + Verbose
 
 ```bash
-npx test-storybook --pattern="Dialog" --verbose
+npm run storybook:test -- Dialog --verbose
 ```
 
 Shows detailed output for Dialog stories only.
 
-### Pattern + Headed
+## Troubleshooting
 
+### Pattern Returns 0 Matches
+
+1. **Check for unescaped special characters**:
+   ```bash
+   # Wrong
+   npm run storybook:test -- 'src/app/[t_id]'
+
+   # Right
+   npm run storybook:test -- 'src/app/\[t_id\]'
+   ```
+
+2. **Check path exists**:
+   ```bash
+   find src -name "*.stories.*" | grep -i "yourpattern"
+   ```
+
+3. **Try simpler pattern first**:
+   ```bash
+   # Start broad, then narrow down
+   npm run storybook:test -- ComponentName
+   npm run storybook:test -- 'folder/ComponentName'
+   npm run storybook:test -- 'full/path/ComponentName'
+   ```
+
+### Pattern Matches Too Many Files
+
+Use more specific path:
 ```bash
-npx test-storybook --pattern="Form" --headed
-```
+# Too broad - matches all SideFilter components
+npm run storybook:test -- SideFilter
 
-Opens visible browser for Form component tests.
+# Specific - matches only devices SideFilter
+npm run storybook:test -- 'devices/_components/SideFilter'
+```
 
 ## Related Notes
 
 - [Testing Development Workflow](/storybook/testing/testing-development-workflow.md) - Daily testing and debugging patterns
+- [Test Runner Filtering](/storybook/testing/test-runner-filtering.md) - Ignoring stories with `.ignore.` pattern

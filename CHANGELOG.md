@@ -14,6 +14,38 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Removed
 
+## [1.4.0] - 2025-12-05
+
+### Added
+- **AI Tool Patterns** (`architecture/ai/` - 7 new notes):
+  - `ai-tool-definition-pattern.md` - Generator function pattern with Zod schemas
+  - `ai-tool-date-validation.md` - Zod datetime validation with offset
+  - `ai-tool-error-handling.md` - Centralized Sentry error handling utility
+  - `ai-tool-file-organization.md` - One tool per file, co-located tests
+  - `ai-tool-input-pattern.md` - Input parameter handling for error context
+  - `ai-tool-server-only.md` - Server-only enforcement with "server-only" import
+  - `ai-tool-service-abstraction.md` - Service layer abstraction over direct API calls
+  - `ai-tool-testing.md` - Testing patterns with mocked dependencies
+- **JSDoc Patterns** (`naming/jsdoc/` - 4 new notes):
+  - `jsdoc-api-type-prefixes.md` - SVC prefix for external API types
+  - `jsdoc-discriminated-unions.md` - Union types with literal string discriminators
+  - `jsdoc-gradual-typecheck.md` - @ts-check adoption with jsconfig.json
+  - `jsdoc-shadcn-component-props.md` - Inline types for shadcn/ui components
+
+### Changed
+- **Documentation Brevity Improvements**:
+  - Condensed `ai-tool-definition-pattern.md` (205 → 65 lines)
+  - Condensed `test-runner-filtering.md` (234 → 57 lines)
+  - Condensed `testing-pattern-matching.md` for better scannability
+- **MECE Compliance**:
+  - Merged `jsdoc-inline-vs-named-typedef.md` into `jsdoc-inline-vs-typedef.md`
+  - Merged `jsdoc-local-vs-shared-types.md` into `jsdoc-centralized-types.md`
+  - Updated `jsdoc-centralized-types.md` with anti-patterns section
+
+### Removed
+- `jsdoc-inline-vs-named-typedef.md` (duplicate - merged into jsdoc-inline-vs-typedef.md)
+- `jsdoc-local-vs-shared-types.md` (duplicate - merged into jsdoc-centralized-types.md)
+
 ## [1.3.0] - 2025-11-19
 
 ### Added
